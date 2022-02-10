@@ -6,7 +6,7 @@ $(document).ready(function () {
 			{
 				left: "0",
 			},
-			300,
+			400,
 		);
 	});
 	// Navbar overlay layer on click function handler in tablet and mobile screen
