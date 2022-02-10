@@ -34,6 +34,9 @@
     --text-color-a :#30384e;
     --text-color-p : #3c4852 ; 
     --navbar-icon-color:#70798b;
+    --orange-color:#ff5722;
+    --purple-color:#906ad4;
+    --green-color:#7cbf2f;
 
 }
     /*---------------------------- */
@@ -491,7 +494,9 @@ nav .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover .dropdown-menu.sub
           margin-bottom: 0;
       }
     @media (max-width:1120px){
-
+        header .header-info h4{
+            font-size: 1.3rem;
+        }
     }
     @media (max-width:991px){
         header .header-content h1{
@@ -517,4 +522,98 @@ nav .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover .dropdown-menu.sub
     }
 /*---------------------------- */
 /*       Header style end         */
+/* -------------------------- */
+
+/*---------------------------- */
+/*       tag-award style start         */
+/* -------------------------- */
+.tag-award{
+    margin-top:-5%;
+}
+.tag-award .card{
+    padding: .5rem 0rem;
+    background: #ffffff;
+    border-radius: var(--border-radius-normal);
+    box-shadow:var(--box-shadow);
+    -webkit-border-radius: var(--border-radius-normal);
+    -moz-border-radius: var(--border-radius-normal);
+    -ms-border-radius: var(--border-radius-normal);
+    -o-border-radius: var(--border-radius-normal);
+}
+.tag-award .card-icon{
+    align-self: center;
+}
+.tag-award .card-icon .icon{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.tag-award .card-icon .icon-1
+{   
+    background: rgba(144, 106, 212,0.12);
+    border: 1px dashed var(--orange-color);
+    color: var(--orange-color);
+}
+.tag-award .card-icon .icon-2
+{
+    background: rgba(144, 106, 212,0.12);
+    border: 1px dashed var(--purple-color);
+    color: var(--purple-color);
+}
+.tag-award .card-icon .icon-3
+{
+    background: rgba(124, 191, 47,0.12);
+    border: 1px dashed var(--green-color);
+    color: var(--green-color);
+}
+.tag-award .card-icon .icon i{
+    font-size: 20px;
+
+}
+.tag-award .card-desc{
+    padding: 0;
+}
+.tag-award .card-body{
+    padding: 1.25rem 0;
+}
+.tag-award .card-body .card-title{
+    margin-bottom: 5px;
+
+}
+.tag-award .card-body .card-text{
+    width: 82%;
+    font-size: .8rem;
+}
+@media (max-width:991px){
+    .tag-award .tag-award{
+        margin-top: -7%;
+    }
+    .tag-award  .card-icon .icon{
+        width: 30px;
+        height: 30px;
+    }
+    .tag-award  .card-icon .icon i{
+        font-size: .9rem;
+
+    }
+    .tag-award  .card-body .card-title{
+        font-size: .85rem
+    }
+    .tag-award .card-body .card-text{
+        font-size: .6rem;
+        width: 100%;
+    }
+}
+@media (max-width:576px){
+    .tag-award{
+        margin-top: -15%;
+    }
+}
+/*---------------------------- */
+/*       tag-award style end         */
 /* -------------------------- */
