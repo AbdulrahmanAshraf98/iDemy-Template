@@ -10,8 +10,10 @@
     /* -------------------------- */
     --section-padding-type-1: 5rem 5rem;
     --section-padding-type-2: 5rem 3.125rem;
+    --section-padding-type-3: 4rem 0;
     --padding-button:0.875rem 0.75rem;
     --padding-button-small-screen:0.25rem 1rem;
+    --padding-button-type-2:1rem;
     /* -------------------------- */
     /*         box-shadow          */
     /* -------------------------- */
@@ -37,13 +39,16 @@
     /*---------------------------- */
     /*       public style           */
     /* -------------------------- */
-
+body{
+    overflow-x:hidden;
+}
 *,body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 h1,h2,h3,h4,h5,h6{
+    font-family: var(--font-family-Jost);
     color: var(--text-color-h);
 }
 a{
@@ -106,6 +111,9 @@ nav{
     padding: 1.2rem 0rem !important;
     background-color: transparent;
     width: 100vw;
+    position: absolute !important;
+    z-index:9999;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 nav .container{
     gap:1%;
@@ -151,11 +159,6 @@ nav .navbar-nav .nav-item  .dropdown-menu{
     border: none;
     opacity: 0;
     visibility: hidden;
-    transition: all 0.3s linear;
-    -webkit-transition: all 0.3s linear;
-    -moz-transition: all 0.3s linear;
-    -ms-transition: all 0.3s linear;
-    -o-transition: all 0.3s linear;
     top:120%;
 }
 
@@ -247,7 +250,7 @@ nav .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover .dropdown-menu.sub
    
     nav{
         padding:1rem !important;
-
+        position:static !important;
     }
     nav .navbar-brand{
         order: 1;
@@ -272,11 +275,7 @@ nav .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover .dropdown-menu.sub
         top: 0;
         width: 100vw;
         display: flex;
-        transition:left .4s linear;
-        -webkit-transition:left .4s linear;
-        -moz-transition:left .4s linear;
-        -ms-transition:left .4s linear;
-        -o-transition:left .4s linear;
+        z-index: 111;
     }
    
     .collapse:not(.show){
@@ -414,4 +413,108 @@ nav .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover .dropdown-menu.sub
 
 /*---------------------------- */
 /*       nav style End         */
+/* -------------------------- */
+
+
+/*---------------------------- */
+/*       Header style start         */
+/* -------------------------- */
+ 
+    header{
+        padding:var(--section-padding-type-3);
+        background-color:var(--section-color-grey);
+    }
+    header .container .row{
+        align-items: center;
+    }
+
+    header .btn-customize {
+        padding: var(--padding-button-type-2);
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    header .header-content h1{
+       font-size: 3rem;
+       font-weight: 600;
+       line-height: 1.2;
+       margin-bottom: 1.5rem;
+    }
+    header .header-content p{
+        font-size: 1.125rem;
+        line-height: 1.8;
+    }
+    header .header-content .input-group{
+        margin-bottom:1rem;
+        align-items: center;
+    }
+    header .header-content .input-group i{
+        position: absolute;
+        left: 3%;
+        z-index: 10;
+        color:#ccd7de;
+        font-size:1.1rem;
+    }
+    header .header-content .input-group input{
+        background-color: var(--white);
+        border: 0;
+        font-family: var(--font-family-Mulish);
+        padding: 1.8rem 3rem;
+        border-radius:var(--border-radius-small) !important;
+        -webkit-border-radius:var(--border-radius-small) !important;
+        -moz-border-radius:var(--border-radius-small) !important;
+        -ms-border-radius:var(--border-radius-small) !important;
+        -o-border-radius:var(--border-radius-small) !important;
+    }
+    header input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color:#707e9c !important;
+        
+      }
+      header input::-moz-placeholder { /* Firefox 19+ */
+        color:#707e9c !important;
+      }
+      header input :-ms-input-placeholder { /* IE 10+ */
+        color:#707e9c !important;
+      }
+      header input :-moz-placeholder { /* Firefox 18- */
+        color:#707e9c !important;
+      }
+      .input-group-append{
+        margin-left: -10px;
+      }
+      header .header-info{
+        width: 85%;
+      }
+      header .header-info h4{
+          font-size: 2.4rem;
+          color: var(--main-color);
+          font-weight: 600;
+          margin-bottom: 0;
+      }
+    @media (max-width:1120px){
+
+    }
+    @media (max-width:991px){
+        header .header-content h1{
+            font-size: 1.8rem;
+        }
+        header .header-content p{
+            font-size: 1.2rem;
+        }
+        header .header-info h4{
+            font-size: 1.5rem;
+        }
+    }
+    @media (max-width:576px){
+        header .header-content h1{
+            margin-bottom: 1rem;
+        }
+        header .header-content p{
+            font-size: 1.05rem;
+        }
+        header .header-content .input-group{
+            width: 95%;
+        }
+    }
+/*---------------------------- */
+/*       Header style end         */
 /* -------------------------- */
