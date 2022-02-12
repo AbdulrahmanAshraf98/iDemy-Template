@@ -1,6 +1,6 @@
 $(document).ready(function () {
 	// Navbar start
-	// Navbar navbar-button in tablet and mobile screen
+	// Navbar navbar-button to open navbar menu  in tablet and mobile screen
 	$(".navbar-toggler").on("click", function () {
 		$(".navbar-collapse").animate(
 			{
@@ -9,7 +9,7 @@ $(document).ready(function () {
 			400,
 		);
 	});
-	// Navbar overlay layer on click function handler in tablet and mobile screen
+	// Navbar overlay layer on click function handler to close navbar menu  in tablet and mobile screen
 	$(".overlay").on("click", function () {
 		$(".navbar-collapse").removeClass("show");
 		$(".navbar-collapse").animate(
@@ -19,7 +19,7 @@ $(document).ready(function () {
 			300,
 		);
 	});
-	// Navbar Close menu  on click function handler in tablet and mobile screen
+	// Navbar Close-menu  on click function handler to close navbar menu   in tablet and mobile screen
 	$(".close-menu").on("click", function () {
 		$(".navbar-collapse").removeClass("show");
 		$(".navbar-collapse").animate(
