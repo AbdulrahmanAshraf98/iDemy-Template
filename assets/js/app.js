@@ -59,4 +59,27 @@ $(document).ready(function () {
 			$(".navbar").toggleClass("scrolled", $(this).scrollTop() > 50);
 		});
 	}
+	//  owl-carouse function
+	$(".top-instructor .owl-carousel").owlCarousel({
+		loop: true,
+		margin: 20,
+		responsiveClass: true,
+		nav: false,
+		autoplay: true,
+		autoplayTimeout: 3000,
+		autoplaySpeed: 1000,
+		smartSpeed: 1000,
+		responsive: {
+			0: {
+				items: 1,
+			},
+			600: {
+				items: 2,
+			},
+			1000: {
+				items: 3,
+				dotsEach: true,
+			},
+		},
+	});
 });
