@@ -385,8 +385,63 @@ li{
     width:30px;
     height:30px;
 }
-
-
+.instructor{
+    box-shadow:var(--box-shadow);
+}
+.instructor .card .card-body{
+    text-align:center;
+    padding: 2.5rem 1.5rem;
+}
+.instructor .card .card-body>*{
+    margin-bottom:0 ;
+}
+.instructor .card .card-body .instructor-tag{
+    width: 50%;
+    margin: 0 auto 10px;
+    background-color:rgba(3, 185, 124,0.1);
+    color:var(--main-color);
+    border-radius: var(--border-radius-normal);
+    -webkit-border-radius: var(--border-radius-normal);
+    -moz-border-radius: var(--border-radius-normal);
+    -ms-border-radius: var(--border-radius-normal);
+    -o-border-radius: var(--border-radius-normal);
+}
+.instructor .card .card-body h2{
+    font-size:20px;
+}
+.instructor .card .card-body .rate-info{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:1%;
+    color:#ff9800;
+    font-size:10px;
+}
+.instructor .card .card-body .rate-info p{
+    margin: 0;
+}
+.instructor .card .card-footer{
+    display: flex;
+    background: none;
+    justify-content: space-between;
+    align-items: center;
+}
+.instructor .card .card-footer .users-enrolled{
+    color: var(--text-color-p);
+}
+@media (max-width:1120px){
+    .instructor .card .card-body .instructor-tag{
+        width: 60%;
+    }
+    .instructor .card .card-footer  .users-enrolled{
+        font-size: 18px;
+    }
+}
+@media (max-width:991px){
+    .instructor .card .card-footer  .users-enrolled{
+        font-size: 13px;
+    }
+}
 /*---------------------------- */
 /*       my  framework           */
 /* -------------------------- */
@@ -1195,4 +1250,60 @@ nav .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover .dropdown-menu.sub
 
 /*---------------------------- */
 /*     Work process end      */
+/* ------------------------   */
+/*---------------------------- */
+/*     top instructor start      */
+/* ------------------------   */
+
+.top-instructor{
+    background-color:var(--section-color-grey);
+    padding: var(--section-padding-type-1);
+}
+
+.top-instructor .owl-carouse{
+    padding-top: 5%;
+}
+.top-instructor .owl-carousel .owl-dots{
+    padding-top: 2%;
+    display: flex;
+    justify-content: center;
+    gap:1%;
+}
+.top-instructor .owl-carousel button.owl-dot{
+    width: 25px;
+    height: 3px;
+    padding: 5px;
+    border-radius: 10px;
+    background: #03b97c;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    opacity: .25;
+
+}
+.top-instructor .owl-carousel button.owl-dot.active{
+    opacity: 1;
+}
+
+
+@media(max-width: 991px)
+{
+    .top-instructor{
+        padding: 80px 0;
+    }
+    .top-instructor .owl-carousel{
+        padding-top: 8%;
+    }
+    .top-instructor .owl-carousel .owl-dots{
+        padding-top: 5%;
+    }
+}
+@media (max-width:576px){
+    
+    
+    
+}
+/*---------------------------- */
+/*     top instructor end      */
 /* ------------------------   */
