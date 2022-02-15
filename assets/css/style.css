@@ -1434,3 +1434,42 @@ nav .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover .dropdown-menu.sub
 /* ------------------------   */
 
 
+
+.call-to-action{
+    padding: 35px 0;
+    background: var(--main-color);
+}
+.question{
+    margin-bottom: 1rem;
+}
+.question h3{
+    color: var(--white);
+    margin-bottom: 5px;
+}
+.question p{
+    color: var(--white);
+}
+.action{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+.action .btn-customize{
+    background: var(--white);
+    padding: 18px 40px;
+    border-radius:var(--border-radius-normal) ;
+    -webkit-border-radius:var(--border-radius-normal) ;
+    -moz-border-radius:var(--border-radius-normal) ;
+    -ms-border-radius:var(--border-radius-normal) ;
+    -o-border-radius:var(--border-radius-normal) ;
+    outline:5px solid rgb(255 255 255 / 20%);
+    color: var(--text-color-a);
+    font-weight: 600;
+}
+@media (max-width:576px){
+    .action{
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
