@@ -17,7 +17,7 @@
     <script src="assets/js/app.js"defer ></script>
     <title>idemy</title>
 </head>
-<body>
+<body class="homepage">
 
     <!---------------  ----------------------->
     <!---------------Navbar start ------------------>
@@ -133,27 +133,7 @@
                 <i class="fas fa-sign-in-alt"></i> SignIn
               </button>
               
-              <!-- Modal -->
-                  <div class="modal fade" id="SignIn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                      <div class="modal-content">
-                          <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                          </button>
-                          </div>
-                          <div class="modal-body">
-                          ...
-                          </div>
-                          <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                          <button type="button" class="btn btn-primary">Save changes</button>
-                          </div>
-                      </div>
-                      </div>
-                  </div>
-                <!-- Modal -->
+  
                 <button class="btn d-lg-block d-none btn-customize" type="button" >
                    Get started
                 </button>
@@ -1184,6 +1164,135 @@
 
     <!---------------  ------------------------->
     <!----------- Call to Action end ------------>
+    <!----------------  ----------------------->
+
+
+     <!---------------  ------------------------->
+    <!----------- Footer start ------------------>
+    <!----------------  ----------------------->
+
+    <footer>
+      <div class="d-flex flex-column">
+        <div class="footer-top">
+          <h4>You Can Find Us At</h4>
+          <ul class="row">
+            <li><a><i class="fab fa-facebook-square"></i></a></li>
+            <li><a><i class="fab fa-linkedin "></i></a></li>
+            <li><a><i class="fab fa-twitter-square"></i></a></li>
+            <li><a><i class="fab fa-youtube-square"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer-middle">
+            <div class="container">
+              <div class="row" >
+                 <div class="col-lg-3 col-md-6 col-12 mb-md-5">
+                   <div class="logo">
+                     <img class="img-fluid" src="assets/img/logo/logo-light.png" alt="" srcset="">
+                   </div>
+                   <div class="why-us-btn d-flex justify-content-between c-white callpse d-md-none"data-toggle="collapse" data-target="#why-us" aria-expanded="false">
+                      Why us  <i class="fas fa-angle-down "></i>
+                   </div>
+                   <div class="why-us d-md-block collapse" id="why-us">
+                      <h2>Do you require assistance with anything?</h2>
+                      <p>Every month, receive updates, hot deals, tutorials, and discounts delivered directly to your inbox.</p>
+                      <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Your Email" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <div class="input-group-append">
+                          <button class="btn btn-customize" type="button" id="button-addon2">Submit</button>
+                        </div>
+                      </div>
+                   </div>
+                 </div>
+                 <div class="col-lg-3 col-md-5 col-12 text-lg-center">
+                  <h5 class="title d-md-block d-none">Company</h5>
+                  <div class="more-btn  c-white callpse d-flex justify-content-between d-md-none"data-toggle="collapse" data-target="#Company" aria-expanded="false">
+                    Company <i class="fas fa-angle-down "></i>
+                 </div>
+                  <ul class="d-flex-column collapse" id="Company">
+                    <li><a href="">iDemy Business</a></li>
+                    <li><a href="">Teach on iDemy</a></li>
+                    <li><a href="">Get the app</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Contact us</a></li>
+                  </ul>
+                 </div>
+                 <div class="col-lg-3 col-md-5 col-12 text-lg-center">
+                  <h5 class="title  d-md-block d-none">Customer</h5>
+                  <div class="company-btn  c-white callpse d-flex justify-content-between d-md-none"data-toggle="collapse" data-target="#Customer" aria-expanded="false">
+                    Customer <i class="fas fa-angle-down"></i>
+                 </div>
+                  <ul class="d-flex-column collapse" id="Customer">
+                    <li><a href="">iDemy Business</a></li>
+                    <li><a href="">Teach on iDemy</a></li>
+                    <li><a href="">Get the app</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Contact us</a></li>
+                  </ul>
+                 </div>
+                 <div class="col-lg-3 col-md-5 col-12 text-lg-center">
+                  <h5 class="title d-md-block d-none">More</h5>
+                  <div class="more-btn  c-white callpse d-flex justify-content-between d-md-none"data-toggle="collapse" data-target="#More" aria-expanded="false">
+                    More <i class="fas fa-angle-down "></i>
+                 </div>
+                  <ul class="d-flex-column collapse" id="More">
+                    <li><a href="">iDemy Business</a></li>
+                    <li><a href="">Teach on iDemy</a></li>
+                    <li><a href="">Get the app</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Contact us</a></li>
+                  </ul> 
+                 </div>
+              </div>
+            </div>
+        </div>
+        <div class="footer-end">
+          <p class="mb-0">©2022 iDemy. By LoopCode</p>
+        </div>
+      </div>
+    </footer>
+
+    <!---------------  ------------------------->
+    <!----------- Footer end ------------------>
+    <!----------------  ----------------------->
+
+    <!---------------  ------------------------->
+    <!----------- Scroll to top start ---------->
+    <!----------------  ----------------------->
+    <a class="btn-scroll-to-top">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!---------------  ------------------------->
+    <!----------- Scroll to top end  ------------------>
+    <!----------------  ----------------------->
+
+
+    <!---------------  ------------------------->
+    <!----------- SignIn Modal start ------------>
+    <!----------------  ----------------------->
+    
+     <div class="modal fade" id="SignIn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                      </div>
+                      <div class="modal-body">
+                      ...
+                      </div>
+                      <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                      </div>
+                  </div>
+                  </div>
+     </div>
+
+    <!---------------  ------------------------->
+    <!-----------SignIn Modal end  -------------->
     <!----------------  ----------------------->
 
 </body>
