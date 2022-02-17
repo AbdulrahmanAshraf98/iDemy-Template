@@ -57,14 +57,18 @@ $(document).ready(function () {
 	if (screenWidth >= 1024) {
 		$(window).scroll(function () {
 			$(".navbar").toggleClass("scrolled", $(this).scrollTop() > 50);
+			$(".btn-scroll-to-top").toggleClass("active", $(this).scrollTop() > 20);
 		});
 	}
+	$(".btn-scroll-to-top").on("click", function () {
+		$("html").animate({ scrollTop: 0 }, 500);
+	});
 	//  owl-carouse function
 	$(".top-instructor .owl-carousel").owlCarousel({
 		loop: true,
 		margin: 20,
 		responsiveClass: true,
-		nav: false,
+		nav: true,
 		autoplay: true,
 		autoplayTimeout: 3000,
 		autoplaySpeed: 1000,
@@ -82,4 +86,5 @@ $(document).ready(function () {
 			},
 		},
 	});
+	
 });
