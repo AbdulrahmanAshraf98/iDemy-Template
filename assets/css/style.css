@@ -2039,7 +2039,7 @@ section.instructor-details .instructor-detail .instructor-info .instructor-ratin
         left: 3%;
     }
     section.instructor-details .instructor-detail .instructor-info .instructor-cources-info ul li{
-        width: 30%;
+        width: 35%;
     }
     .share-buttons-group{
         padding-top: .5rem;
@@ -2056,7 +2056,6 @@ section.instructor-details .instructor-detail .instructor-info .instructor-ratin
         left: 3%;
     }
     section.instructor-details .instructor-detail .instructor-info .instructor-cources-info ul li{
-        width: 35%;
         font-size: 12px;
     }
     .share-buttons-group .btn-customize{
