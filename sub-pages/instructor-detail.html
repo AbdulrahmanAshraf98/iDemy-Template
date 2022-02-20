@@ -15,13 +15,13 @@
     <script src="../assets/js/app.js"defer ></script>
     <title>instructor-detail</title>
 </head>
-<body>
-          <!---------------  ----------------------->
+<body id="Instructor-detail">
+    <!---------------  ----------------------->
     <!---------------Navbar start ------------------>
     <!----------------  ----------------------->
-    <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="#"><img class="img-fluid" src="assets/img/logo/logo.png" alt="" srcset=""></a>
+            <a class="navbar-brand" href="#"><img class="img-fluid" src="../assets/img/logo/logo.png" alt="" srcset=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <i class="fas fa-bars"></i>
             </button>
@@ -33,11 +33,11 @@
                   <i class="fas fa-times"></i>
                 </a>
                 <li class="nav-item active dropdown">
-                    <a class="nav-link  dropdown" href="#" id="navbarDropdown" role="dropdown" aria-expanded="false">
+                    <a class="nav-link  dropdown" href="../index.html" id="navbarDropdown" role="dropdown" aria-expanded="false">
                       <span>Home</span> <i class="fas fa-angle-down open-menu"></i>
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li class="dropdown-item" href="#"><a>Home 1</a><li/>
+                      <li class="dropdown-item" ><a href="../index.html">Home 1</a><li/>
                     </ul>
                   </li>
                   <li class="nav-item dropdown">
@@ -141,11 +141,79 @@
     <!---------------Navbar end  ------------------>
     <!----------------  ----------------------->
 
+    <!---------------  ----------------------->
+    <!---- --Instructor Details start  ------->
+    <!----------------  ----------------------->
+
+    <section class="instructor-details">
+      <div class="container">
+        <div class="row instructor-detail">
+          <div class="col-lg-3 col-12">
+            <div class="instructor-video-preview">
+              <img class="img-fluid" src="../assets/img/team/t-2.png" alt="" srcset="">
+              <a class="preview">
+                <div class="play-icon">
+                  <i class="fa fa-play"></i>
+                </div>
+                <h6>Preview</h6>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-8">
+              <din class="instructor-info">
+                  <div class="instructor-specialize d-flex">
+                    <div class="b-c-Cyan">
+                      <p>Web Design</p>
+                    </div>
+                    <div class="b-c-pink">
+                      <p>PHP</p>
+                    </div>
+                  </div>
+                  <div class="instructor-name">
+                    <h2>Namrta K. Mehta</h2>
+                  </div>
+                  <div class="instructor-cources-info">
+                    <ul class="row "> 
+											<li><i class="fas fa-calendar"></i>10 - 20 weeks</li>
+											<li><i class="fas fa-forward"></i></i>102 Lectures</li>
+											<li><i class="fa fa-user"></i></i>502 Student Enrolled</li>
+										</ul>
+                  </div>
+                  <div class="instructor-short-desc">
+                    <p>Excepteur sint occaecat cupidatat non proident, deserunt mollit anim id est laborum. accusantium doloremque laudantium,vitae dicta <a href="#">Read More..</a>.</p>
+                  </div>
+                  <div class="instructor-rating d-flex">
+                    <div class="star-rating">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <div class="review-count">
+                      <span>4</span>
+                      3572 Reviews
+                    </div>
+                  </div>
+              </din>
+          </div>
+          <div class="col-lg-3 col-md-4 share-buttons-group">
+            <button class="btn btn-customize">Get Membership</button>
+            <button class="btn btn-customize btn-share">Share</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!---------------  ----------------------->
+    <!---- --Instructor Details end  --------->
+    <!----------------  ----------------------->
+
 
      <!-----------Courses start ---------------->
     <!----------------  ----------------------->
     
-    <section class="courses">
+    <section class="instractor-courses">
         <div class="container">
           <div class="courses row">
             <div class="course-items col-lg-4 col-md-6 col-12">
@@ -167,6 +235,9 @@
                               <div class="cource-item-category b-c-yellow">
                                 <p>Business</p>
                               </div>
+                              <div class="cource-item-enrolled ">
+                                <p>7,150 <span>Enrolled</span></p>
+                              </div>
                               
                         </div>
                         <div class="cource-item-desc-middle">
@@ -176,7 +247,8 @@
                         </div>
                         <div class="cource-item-desc-end">
                           <p class="lecture-time"><i class="fa fa-clock"></i>10 hr 07 min</p>
-                          <p class="lecture-count"><i class="fa fa-video"></i>67 Lectures</p>
+                          <p class="lecture-count"><i class="fa fa-video"></i>Beginer</p>
+                          <p class="lecture-level"><i class="fa fa-signal text-warning"></i>Beginer</p>
                         </div>
                       </div>
                       <div class="cource-item-footer">
@@ -216,6 +288,9 @@
                           <div class="cource-item-category b-c-Cyan">
                             <p>Business</p>
                           </div>
+                          <div class="cource-item-enrolled ">
+                            <p>7,150 <span>Enrolled</span></p>
+                          </div>
                        
                     </div>
                     <div class="cource-item-desc-middle">
@@ -225,7 +300,8 @@
                     </div>
                     <div class="cource-item-desc-end">
                       <p class="lecture-time"><i class="fa fa-clock"></i>10 hr 07 min</p>
-                      <p class="lecture-count"><i class="fa fa-video"></i>67 Lectures</p>
+                      <p class="lecture-count"><i class="fa fa-video"></i>Beginer</p>
+                      <p class="lecture-level"><i class="fa fa-signal text-warning"></i>Beginer</p>
                     </div>
                   </div>
                   <div class="cource-item-footer">
@@ -265,6 +341,9 @@
                         <div class="cource-item-category b-c-pink">
                           <p>Business</p>
                         </div>
+                        <div class="cource-item-enrolled ">
+                          <p>7,150 <span>Enrolled</span></p>
+                        </div>
 
                   </div>
                   <div class="cource-item-desc-middle">
@@ -274,7 +353,8 @@
                   </div>
                   <div class="cource-item-desc-end">
                     <p class="lecture-time"><i class="fa fa-clock"></i>10 hr 07 min</p>
-                    <p class="lecture-count"><i class="fa fa-video"></i>67 Lectures</p>
+                    <p class="lecture-count"><i class="fa fa-video"></i>Beginer</p>
+                    <p class="lecture-level"><i class="fa fa-signal text-warning"></i>Beginer</p>
                   </div>
                 </div>
                 <div class="cource-item-footer">
@@ -314,6 +394,9 @@
                           <div class="cource-item-category b-c-brown">
                             <p>Business</p>
                           </div>
+                          <div class="cource-item-enrolled ">
+                            <p>7,150 <span>Enrolled</span></p>
+                          </div>
 
                     </div>
                     <div class="cource-item-desc-middle">
@@ -323,7 +406,8 @@
                     </div>
                     <div class="cource-item-desc-end">
                       <p class="lecture-time"><i class="fa fa-clock"></i>10 hr 07 min</p>
-                      <p class="lecture-count"><i class="fa fa-video"></i>67 Lectures</p>
+                      <p class="lecture-count"><i class="fa fa-video"></i>Beginer</p>
+                      <p class="lecture-level"><i class="fa fa-signal text-warning"></i>Beginer</p>
                     </div>
                   </div>
                   <div class="cource-item-footer">
@@ -363,6 +447,9 @@
                       <div class="cource-item-category b-c-orange">
                         <p>Business</p>
                       </div>
+                      <div class="cource-item-enrolled ">
+                        <p>7,150 <span>Enrolled</span></p>
+                      </div>
 
                 </div>
                 <div class="cource-item-desc-middle">
@@ -372,7 +459,8 @@
                 </div>
                 <div class="cource-item-desc-end">
                   <p class="lecture-time"><i class="fa fa-clock"></i>10 hr 07 min</p>
-                  <p class="lecture-count"><i class="fa fa-video"></i>67 Lectures</p>
+                  <p class="lecture-count"><i class="fa fa-video"></i>Beginer</p>
+                  <p class="lecture-level"><i class="fa fa-signal text-warning"></i>Beginer</p>
                 </div>
               </div>
               <div class="cource-item-footer">
@@ -412,6 +500,9 @@
                     <div class="cource-item-category b-c-purpel">
                       <p>Business</p>
                     </div>
+                    <div class="cource-item-enrolled ">
+                      <p>7,150 <span>Enrolled</span></p>
+                    </div>
 
               </div>
               <div class="cource-item-desc-middle">
@@ -421,7 +512,8 @@
               </div>
               <div class="cource-item-desc-end">
                 <p class="lecture-time"><i class="fa fa-clock"></i>10 hr 07 min</p>
-                <p class="lecture-count"><i class="fa fa-video"></i>67 Lectures</p>
+                <p class="lecture-count"><i class="fa fa-video"></i>Beginer</p>
+                <p class="lecture-level"><i class="fa fa-signal text-warning"></i>Beginer</p>
               </div>
             </div>
             <div class="cource-item-footer">
@@ -451,8 +543,8 @@
       </section>
   
      <!---------------  ------------------------->
-      <!-----------Courses end ------------------>
-      <!----------------  ----------------------->
+    <!-----------Courses end ------------------>
+    <!----------------  ----------------------->
     <!---------------  ------------------------->
     <!--------- Call to Action start ------------->
     <!----------------  ----------------------->
