@@ -347,46 +347,49 @@ li{
     -o-border-radius: var(--border-radius-circle);
 }
 
-.cource-item-category.b-c-yellow{
+
+.b-c-yellow{
     background: rgba(255, 152, 0,0.18);
     
 }
-.cource-item-category.b-c-yellow>p{
+.b-c-yellow>p{
     color:#ec8d01;
 }
-.cource-item-category.b-c-Cyan{
+.b-c-Cyan{
     background-color: rgba(3, 169, 244,0.11);
 }
-.cource-item-category.b-c-Cyan>p{
+.b-c-Cyan>p{
     color: #03a9f4;
 }
-.cource-item-category.b-c-pink{
+.b-c-pink{
     background-color:rgba(189, 43, 214,0.11);
 
 }
-.cource-item-category.b-c-pink>p{
+.b-c-pink>p{
     color:#bd2bd6;
 }
-.cource-item-category.b-c-brown{
+.b-c-brown{
     background-color: rgba(130, 79, 60,0.11);
 }
-.cource-item-category.b-c-brown>p
+.b-c-brown>p
 {
     color:#824f3c;
 }
-.cource-item-category.b-c-orange{
+.b-c-orange{
     background-color:rgba(255, 87, 34,0.11);
 }
-.cource-item-category.b-c-orange>p{
+.b-c-orange>p{
     color:#ff5722;
 }
-.cource-item-category.b-c-purpel{
+.b-c-purpel{
     background: rgba(134, 95, 255,0.11);
 }
-.cource-item-category.b-c-purpel>p{
+.b-c-purpel>p{
     color:#865fff;
 }
-
+.cource-item-enrolled{
+    font-size: .9rem;
+}
 
 .check-right,.item-icon{ 
     color:var(--main-color);
@@ -404,6 +407,12 @@ li{
 .check-right{
     width:30px;
     height:30px;
+}
+
+@media (max-width:320px) {
+    .cource-desc .cource-item-desc .cource-item-desc-end{
+        font-size: 13px;
+    }
 }
 .instructor{
     box-shadow:var(--box-shadow);
@@ -1831,3 +1840,249 @@ footer  .footer-end p{
   
  
 }
+
+
+
+
+/*---------------------------- */
+/*    Home page end            */
+/* ------------------------   */
+
+
+/*---------------------------- */
+/*   instructor-detail page start            */
+/* ------------------------   */
+
+/*---------------------------- */
+/*   instructor-detail page nav start */
+/* ------------------------   */
+#Instructor-detail nav{
+        background-color: var(--white);
+        box-shadow:var(--box-shadow);
+        position:sticky !important;
+
+    }
+#Instructor-detail nav.scrolled{
+        position: fixed !important; 
+    }
+/*---------------------------- */
+/*   instructor-detail page nav  end */
+/* ------------------------   */
+
+
+/*---------------------------------------------------------- */
+/*   instructor-detail page instructor-details section start */
+/* ------------------------ -------------------------------  */
+section.instructor-details{
+        padding: 3rem 0rem;
+    }
+section.instructor-details .instructor-detail{
+    align-items: center;
+    
+}
+section.instructor-details .instructor-detail>*{
+    margin-bottom: 1rem;
+}
+section.instructor-details .instructor-detail .instructor-video-preview{
+    position: relative;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    overflow: hidden;
+    text-align: right;
+}
+section.instructor-details .instructor-detail .instructor-video-preview img{
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+section.instructor-details .instructor-detail .instructor-video-preview .preview{
+    width: 40%;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: .5rem 0;
+    background-color:rgba(2,2,2,0.2);
+    border-radius: 4px;
+}
+section.instructor-details .instructor-detail .instructor-video-preview .preview .play-icon{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+    color: #7b7d98;
+    border-radius:var(--border-radius-circle);
+    font-size: 10px;
+    -webkit-border-radius:var(--border-radius-circle);
+    -moz-border-radius:var(--border-radius-circle);
+    -ms-border-radius:var(--border-radius-circle);
+    -o-border-radius:var(--border-radius-circle);
+}
+section.instructor-details .instructor-detail .instructor-video-preview .preview h6{
+    margin-bottom: 0;
+    color:var(--white);
+}
+section.instructor-details .instructor-detail .instructor-info .instructor-specialize{
+    gap:3%;
+    margin-bottom: .5rem;
+}
+section.instructor-details .instructor-detail .instructor-info .instructor-specialize .b-c-Cyan,.b-c-pink{
+    padding: 5px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    border-radius: 10px;
+   
+}
+section.instructor-details .instructor-detail .instructor-info .instructor-specialize .b-c-Cyan>p,.b-c-pink>p{
+    margin: 0;
+}
+section.instructor-details .instructor-detail  .instructor-info .instructor-cources-info{
+    margin-bottom: .5rem;
+}
+section.instructor-details .instructor-detail  .instructor-info .instructor-cources-info ul{
+    margin: 0;
+}
+
+section.instructor-details .instructor-detail  .instructor-info .instructor-cources-info ul li{
+    width: 20%;
+    font-size: 14px;
+    color:#3c4852;
+    display: flex;
+    gap: 3%;
+    align-items: center;
+    
+}
+section.instructor-details .instructor-detail  .instructor-info .instructor-cources-info ul li:last-child{
+    gap: 2%;
+    flex: 1;
+}
+section.instructor-details .instructor-detail  .instructor-info .instructor-short-desc a{
+    color:var(--main-color);
+}
+section.instructor-details .instructor-detail  .instructor-info .instructor-rating{
+    align-items: baseline;
+    gap: 2%;
+}
+section.instructor-details .instructor-detail  .instructor-info .instructor-rating .star-rating i{
+    font-size: 11px;
+    color: #f1992c;
+
+}
+section.instructor-details .instructor-detail  .instructor-info .instructor-rating .star-rating i:last-of-type{
+    color: #ced7e8; 
+
+}
+section.instructor-details .instructor-detail .instructor-info .instructor-rating .review-count{
+    font-size: 12.5px;
+}
+section.instructor-details .instructor-detail .instructor-info .instructor-rating .review-count span{
+    font-size: 1rem;
+    color: #7baf17;
+    margin-right: 5px;
+
+}
+.share-buttons-group {
+    text-align: center;
+    padding-top: 3rem;
+}
+.share-buttons-group .btn-customize{
+    width: 70%;
+    margin-bottom:1rem;
+}
+.share-buttons-group .btn-share{
+    background-color: transparent;
+    color: #3c4852;
+    border: 1px solid #eaeff7;
+
+}
+/*----------------------------------------------------------------- */
+/*   instructor-detail page instructor-details section media start */
+/* ------------------------ ------------------------------- ------ */
+@media (max-width:1120px){
+    section.instructor-details .instructor-detail .instructor-info .instructor-cources-info ul li{
+        width: 25%;
+    }
+
+   #Instructor-detail  .cource-desc .cource-item-desc .cource-item-desc-end{
+        font-size: 13px;
+    }
+}
+@media(max-width:991px){
+    section.instructor-details .instructor-detail .instructor-video-preview .preview{
+        width: 15%;
+        bottom: 1.5%;
+        left: 1%;
+        justify-content: center;
+        gap: 5%;
+    }
+    section.instructor-details .instructor-detail .instructor-info .instructor-cources-info ul li{
+        width: 25%;
+    }
+}
+
+@media (max-width:576px){
+    section.instructor-details .instructor-detail .instructor-video-preview .preview{
+        width: 30%;
+        bottom: 5%;
+        left: 3%;
+    }
+    section.instructor-details .instructor-detail .instructor-info .instructor-cources-info ul li{
+        width: 30%;
+    }
+    .share-buttons-group{
+        padding-top: .5rem;
+        text-align: left;
+    }
+    .share-buttons-group .btn-customize{
+        width: 50%;
+    }
+}
+@media (max-width:320px){
+    section.instructor-details .instructor-detail .instructor-video-preview .preview{
+        width: 45%;
+        bottom: 5%;
+        left: 3%;
+    }
+    section.instructor-details .instructor-detail .instructor-info .instructor-cources-info ul li{
+        width: 35%;
+        font-size: 12px;
+    }
+    .share-buttons-group .btn-customize{
+        width: 65%;
+    }
+}
+/*----------------------------------------------------------------- */
+/*   instructor-detail page instructor-details section media end */
+/* ------------------------ ------------------------------- ------ */
+
+
+/*---------------------------------------------------------- */
+/*   instructor-detail page instructor-details section end */
+/* ------------------------ -------------------------------  */
+/*---------------------------------------------------------- */
+/*   instructor-detail page instractor-courses section start */
+/* ------------------------ -------------------------------  */
+#Instructor-detail .instractor-courses{
+    background-color: var(--section-color-grey);
+    padding: 50px 0;
+}
+
+/*---------------------------------------------------------- */
+/*   instructor-detail page instractor-courses section end */
+/* ------------------------ -------------------------------  */
+
+/*---------------------------- */
+/*    instructor-detail page end  */
+/* ------------------------   */
