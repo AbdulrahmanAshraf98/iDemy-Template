@@ -45,6 +45,7 @@ icons fontawosame: name          classname
                  17-user         <i class="fa fa-user"></i>
                  18-view         <i class="fa fa-eye"></i>
                  19-star         <i class="fa fa-star"></i>
+                                 <i class="fas fa-star-half-alt"></i>
                  20-check        <i class="fas fa-check"></i>
                  21-wrong        <i class="fas fa-times"></i>
                  21-quetsion     <i class="fa fa-question-circle"></i>
