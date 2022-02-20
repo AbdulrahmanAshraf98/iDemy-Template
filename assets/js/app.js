@@ -64,27 +64,29 @@ $(document).ready(function () {
 		$("html").animate({ scrollTop: 0 }, 500);
 	});
 	//  owl-carouse function
-	$(".top-instructor .owl-carousel").owlCarousel({
-		loop: true,
-		margin: 20,
-		responsiveClass: true,
-		nav: true,
-		autoplay: true,
-		autoplayTimeout: 3000,
-		autoplaySpeed: 1000,
-		smartSpeed: 1000,
-		responsive: {
-			0: {
-				items: 1,
+	try {
+		$("#Homepage .top-instructor .owl-carousel").owlCarousel({
+			loop: true,
+			margin: 20,
+			responsiveClass: true,
+			nav: true,
+			autoplay: true,
+			autoplayTimeout: 3000,
+			autoplaySpeed: 1000,
+			smartSpeed: 1000,
+			responsive: {
+				0: {
+					items: 1,
+				},
+				600: {
+					items: 2,
+				},
+				1000: {
+					items: 3,
+					dotsEach: true,
+				},
 			},
-			600: {
-				items: 2,
-			},
-			1000: {
-				items: 3,
-				dotsEach: true,
-			},
-		},
-	});
+		});
+	} catch {}
 	
 });
