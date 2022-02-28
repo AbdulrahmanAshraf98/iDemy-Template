@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Mulish:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/external/all.min.css">
+    <link rel="stylesheet" href="../assets/css/external/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/external/jquery-3.6.0.min.js" defer></script>
+    <script src="../assets/js/external/bootstrap.bundle.min.js" defer ></script>
+    <script src="../assets/js/app.js"defer ></script>
+    <title>Find Instructor</title>
+</head>
+<body id="Find-instructor">
+
+    <!---------------  ----------------------->
+    <!---------------Navbar start ------------------>
+    <!----------------  ----------------------->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img class="img-fluid" src="../assets/img/logo/logo.png" alt="" srcset=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-bars"></i>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          
+              <ul class="navbar-nav mr-auto">
+                <a class="nav-item close-menu d-lg-none d-block">
+                  <i class="fas fa-times"></i>
+                </a>
+                <li class="nav-item active dropdown">
+                    <a class="nav-link  dropdown" id="navbarDropdown" role="dropdown" aria-expanded="false">
+                      <span>Home</span> <i class="fas fa-angle-down open-menu"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li class="dropdown-item" ><a href="../index.html">Home 1</a><li/>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown" href="#" id="navbarDropdown" role="dropdown" aria-expanded="false">
+                      Courses
+                      <i class="fas fa-angle-down open-menu"></i>
+                    </a>
+
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                      <li class="dropdown-item" ><a href="#">Search Courses in Grid
+                        <i class="fas fa-angle-right open-sub-menu"></i>
+                      </a>
+                        <ul class="dropdown-menu sub-menu" aria-labelledby="navbarDropdown">
+                            <li class="dropdown-item" ><a href="./Courses-Grid-Style.html">Grid Layout Style 1</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropdown-item" ><a href="#">Search Courses in List
+                            <i class="fas fa-angle-right open-sub-menu"></i>
+                        </a>
+                            <ul class="dropdown-menu sub-menu" aria-labelledby="navbarDropdown">
+                                <li class="dropdown-item" ><a href="#">List Layout Style 1
+                                </a></li>
+
+                              </ul>
+                        </li>
+                        <li class="dropdown-item"><a href="#">Courses Details
+                            <i class="fas fa-angle-right open-sub-menu"></i>
+                        </a>
+                            <ul class="dropdown-menu sub-menu" aria-labelledby="navbarDropdown">
+                                <li class="dropdown-item" ><a href="#">Courses Details 1</a></li>
+                              </ul>
+                        </li>
+                        <li class="dropdown-item"><a href="#">Explore Category</a>
+                        </li>
+                        <li class="dropdown-item" ><a href="#">Find Instructor</a>
+                        </li>
+                        <li class="dropdown-item" ><a href="#">Instructor Details</a>
+                        </li>
+
+                    
+                    </ul>
+                  </li>
+                  
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown" href="#" id="navbarDropdown" role="dropdown" aria-expanded="false">
+                      Pages
+                      <i class="fas fa-angle-down open-menu"></i>
+                    </a>
+
+                    <ul class="dropdown-menu s" aria-labelledby="navbarDropdown">
+                        
+                      <li class="dropdown-item " ><a href="#">Shop Pages
+                        <i class="fas fa-angle-right open-sub-menu"></i>
+                      </a>
+                        <ul class="dropdown-menu sub-menu" aria-labelledby="navbarDropdown">
+                            <li class="dropdown-item" ><a href="#">Grid Layout Style 1</a></li>
+                            <li class="dropdown-item" ><a href="#">Grid Layout Style 1</a></li>
+                            <li class="dropdown-item" ><a href="#">Grid Layout Style 1</a></li>
+                            <li class="dropdown-item" ><a href="#">Grid Layout Style 1</a></li>
+                            <li class="dropdown-item" ><a href="#">Grid Layout Style 1</a></li>
+                            <li class="dropdown-item" ><a href="#">Grid Layout Style 1</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropdown-item" ><a href="#">Search Courses in List
+                        </a>
+                        </li>
+                        <li class="dropdown-item"><a href="#">Courses Details
+                        </a>
+                        </li>
+                        <li class="dropdown-item"><a href="#">Explore Category</a>
+                        </li>
+                        <li class="dropdown-item" ><a href="#">Find Instructor</a>
+                        </li>
+                        <li class="dropdown-item" ><a href="#">Instructor Details</a>
+                        </li>
+
+                    
+                    </ul>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Dashboard</a>
+                  </li>
+              </ul>
+              <div class="overlay d-lg-none d-block"></div>
+         </div>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-customize-md " data-toggle="modal" data-target="#SignIn">
+                <i class="fas fa-sign-in-alt"></i> SignIn
+              </button>
+              
+  
+                <button class="btn d-lg-block d-none btn-customize" type="button" >
+                   Get started
+                </button>
+        </div>
+      </nav>
+
+    <!---------------  ----------------------->
+    <!---------------Navbar end  ------------------>
+   <!---------------  ----------------------->
+    <!---------- header-title start  --------->
+    <!----------------  ----------------------->
+
+    <header class="header-title">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav aria-label="breadcrumb">
+                        <div class="breadcrumb-title">
+                            <h1>Find Instructor
+                            </h1>
+                        </div>
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Find Instructor
+                        </li>
+                        </ol>
+                      </nav>
+                </div>
+            </div>
+        </div>
+     </header>
+
+    <!---------------  ----------------------->
+    <!---------- header-title end  --------->
+    <!----------------  ----------------------->
+
+     <!---------------  ------------------------->
+      <!----------- Find start ------------>
+      <!----------------  ----------------------->
+
+      <section class="find">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="sidebar col-lg-4 col-md-12">
+                   <a class="filter_link d-lg-none d-flex  collapsed" data-toggle="collapse" href="#Filiter-type" role="button" aria-expanded="false" aria-controls="#Filiter-type">
+                     Open Advance Filter
+                     </a>
+                   <div class="filiter-type d-lg-block collapse" id="Filiter-type">
+                       <div class="widget">
+                           <div class="form-group">
+                               <form action="">
+                                   <div class="input-group">
+                                       <i class="fa fa-search "></i>
+                                       <input type="text" class="form-control" placeholder="Search Your Courses" aria-label="Recipient's username" aria-describedby="button-addon2">
+
+                                       </div>
+                               </form>
+                           </div>
+                           <div class="form-group">
+                               <form action="">
+                                   <select class="form-control custom-select">
+                                       <option >Default select</option>
+                                       <option>Default select</option>
+                                       <option>Default select3</option>
+                                       <option>Default select</option>
+                                     </select>
+                               </form>
+                           </div>
+                           <div class="form-group">
+                               <form action="">
+                                   <h6 class="form-group-title">
+                                       Top Courses
+                                   </h6>
+                                     <div class="form-check">
+                                       <input class="form-check-input" type="checkbox" value="" id="a1" >
+                                       <label class="form-check-label" for="a1">
+                                         Keny White
+                                         <span>10</span>
+                                       </label>
+                                     </div>
+                                     <div class="form-check">
+                                       <input class="form-check-input" type="checkbox" value="" id="a2" >
+                                       <label class="form-check-label" for="a2">
+                                         Hinata Hyuga
+                                         <span>10</span>
+                                       </label>
+                                     </div>
+                                     <div class="form-check">
+                                       <input class="form-check-input" type="checkbox" value="" id="a3" >
+                                       <label class="form-check-label" for="a3">
+                                         Mike hussy
+                                         <span>10</span>
+                                       </label>
+                                     </div>
+                                     <div class="form-check">
+                                       <input class="form-check-input" type="checkbox" value="" id="a4" >
+                                       <label class="form-check-label" for="a4">
+                                         Adam Riky 
+                                         <span>10</span>
+                                       </label>
+                                     </div>
+
+                               </form>
+                           </div>
+                           <div class="form-group">
+                               <form action="">
+                                   <h6 class="form-group-title">
+                                       Skill Level
+                                   </h6>
+                                   <div class="form-check">
+                                     <input class="form-check-input" type="checkbox" value="" id="s0" >
+                                     <label class="form-check-label" for="s0">
+                                       Beginning
+                                       <span>10</span>
+                                     </label>
+                                   </div>
+                                     <div class="form-check">
+                                       <input class="form-check-input" type="checkbox" value="" id="s1" >
+                                       <label class="form-check-label" for="s1">
+                                         Basic level
+                                         <span>10</span>
+                                       </label>
+                                     </div>
+                                     <div class="form-check">
+                                       <input class="form-check-input" type="checkbox" value="" id="s2" >
+                                       <label class="form-check-label" for="s2">
+                                         Inter Level
+                                         <span>10</span>
+                                       </label>
+                                     </div>
+                                     <div class="form-check">
+                                       <input class="form-check-input" type="checkbox" value="" id="s3" >
+                                       <label class="form-check-label" for="s3">
+                                         Advance
+                                         <span>10</span>
+                                       </label>
+                                     </div>
+                               </form>
+                           </div>
+                           <div class="form-group">
+                               <form action="">
+                                   <h6 class="form-group-title">
+                                       Skill Level
+                                   </h6>
+                                   <div class="form-check">
+                                       <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                       <label class="form-check-label" for="defaultCheck1">
+                                         Default checkbox
+                                       </label>
+                                     </div>
+                                     <div class="form-check">
+                                       <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+                                       <label class="form-check-label" for="defaultCheck2">
+                                         Disabled checkbox
+                                         <span>10</span>
+                                       </label>
+                                     </div>
+                                     <div class="form-check">
+                                       <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+                                       <label class="form-check-label" for="defaultCheck2">
+                                         Disabled checkbox
+                                         <span>10</span>
+                                       </label>
+                                     </div>
+                               </form>
+                           </div>
+                           <div class="submit-btn">
+                               <button class="btn btn-customize">
+                                   Apply Filter
+                               </button>
+                           </div>
+                       </div>
+                   </div>
+                </div>
+                <div class="col-lg-8  col-12  list-items">
+                    <div class="filiter row ">
+                           <div class="counting-item col-md-4 col-12">
+                             <h6 class="counting-item-title">Showing 1-25 Of 72</h6>
+                             </div>
+                             <div class="view-type col-md-7 col-12 d-flex justify-content-end">
+                               <div class="filter-type  col-12 d-flex">
+                                 <div class="sort col-lg-9  col-8  d-flex align-items-center ">
+                                   <label for="exampleInputEmail1 m-0">Short By:</label>
+                                   <div class="form-group m-0">
+                                     <form action="">
+                                         <select class="form-control custom-select ">
+                                             <option>Default select</option>
+                                             <option>Default select</option>
+                                             <option>Default select3</option>
+                                             <option>Default select</option>
+                                           </select>
+                                     </form>
+                                 </div>
+                                 </div>
+
+                             </div>
+                             </div>
+                     </div>
+                     <div class="instructors row">
+                       <div class="instructor-item col-xl-4 col-lg-6  col-md-4 col-12">
+                        <div class="card">
+                            <div class="instructor-photo">
+                                <img src="../assets/img/avater/9mCNr06.jpg" class="img-fluid" alt="...">
+                            </div>
+                           
+                            <div class="card-body">
+                              <p class="instructor-subject">Physics Teacher</p>
+                              <h5 class="card-title"><a href="./instructor-detail.html">Alisha P. Paradis</a></h5>
+                              <div class="star-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <span >(244 Reviews)</span>
+                              </div>
+                            </div>
+                           
+                            <div class="card-footer">
+                             <div class="enrolled-number">
+                              <i class="fa fa-user"></i>
+                              2.5k Users Enrolled
+                             </div>
+                            </div>
+                          </div>
+
+                       </div>
+                       <div class="instructor-item col-xl-4 col-lg-6   col-md-4 col-12">
+                        <div class="card">
+                            <div class="instructor-photo">
+                                <img src="../assets/img/avater/9mCNr06.jpg" class="img-fluid" alt="...">
+                            </div>
+                           
+                            <div class="card-body">
+                              <p class="instructor-subject">Physics Teacher</p>
+                              <h5 class="card-title"><a href="./instructor-detail.html">Alisha P. Paradis</a></h5>
+                              <div class="star-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <span >(244 Reviews)</span>
+                              </div>
+                            </div>
+                           
+                            <div class="card-footer">
+                             <div class="enrolled-number">
+                              <i class="fa fa-user"></i>
+                              2.5k Users Enrolled
+                             </div>
+                            </div>
+                          </div>
+
+                       </div>
+                       <div class="instructor-item col-xl-4 col-lg-6   col-md-4 col-12">
+                        <div class="card">
+                            <div class="instructor-photo">
+                                <img src="../assets/img/avater/9mCNr06.jpg" class="img-fluid" alt="...">
+                            </div>
+                           
+                            <div class="card-body">
+                              <p class="instructor-subject">Physics Teacher</p>
+                              <h5 class="card-title"><a href="./instructor-detail.html">Alisha P. Paradis</a></h5>
+                              <div class="star-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <span >(244 Reviews)</span>
+                              </div>
+                            </div>
+                           
+                            <div class="card-footer">
+                             <div class="enrolled-number">
+                              <i class="fa fa-user"></i>
+                              2.5k Users Enrolled
+                             </div>
+                            </div>
+                          </div>
+
+                       </div>
+                       <div class="instructor-item col-xl-4 col-lg-6  col-md-4 col-12">
+                        <div class="card">
+                            <div class="instructor-photo">
+                                <img src="../assets/img/avater/9mCNr06.jpg" class="img-fluid" alt="...">
+                            </div>
+                           
+                            <div class="card-body">
+                              <p class="instructor-subject">Physics Teacher</p>
+                              <h5 class="card-title"><a href="./instructor-detail.html">Alisha P. Paradis</a></h5>
+                              <div class="star-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <span >(244 Reviews)</span>
+                              </div>
+                            </div>
+                           
+                            <div class="card-footer">
+                             <div class="enrolled-number">
+                              <i class="fa fa-user"></i>
+                              2.5k Users Enrolled
+                             </div>
+                            </div>
+                          </div>
+
+                       </div>
+                       <div class="instructor-item col-xl-4 col-lg-6  col-md-4 col-12">
+                        <div class="card">
+                            <div class="instructor-photo">
+                                <img src="../assets/img/avater/9mCNr06.jpg" class="img-fluid" alt="...">
+                            </div>
+                           
+                            <div class="card-body">
+                              <p class="instructor-subject">Physics Teacher</p>
+                              <h5 class="card-title"><a href="./instructor-detail.html">Alisha P. Paradis</a></h5>
+                              <div class="star-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <span >(244 Reviews)</span>
+                              </div>
+                            </div>
+                           
+                            <div class="card-footer">
+                             <div class="enrolled-number">
+                              <i class="fa fa-user"></i>
+                              2.5k Users Enrolled
+                             </div>
+                            </div>
+                          </div>
+
+                       </div>
+                       <div class="instructor-item col-xl-4 col-lg-6  col-md-4 col-12">
+                        <div class="card">
+                            <div class="instructor-photo">
+                                <img src="../assets/img/avater/9mCNr06.jpg" class="img-fluid" alt="...">
+                            </div>
+                           
+                            <div class="card-body">
+                              <p class="instructor-subject">Physics Teacher</p>
+                              <h5 class="card-title"><a href="./instructor-detail.html">Alisha P. Paradis</a></h5>
+                              <div class="star-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <span >(244 Reviews)</span>
+                              </div>
+                            </div>
+                           
+                            <div class="card-footer">
+                             <div class="enrolled-number">
+                              <i class="fa fa-user"></i>
+                              2.5k Users Enrolled
+                             </div>
+                            </div>
+                          </div>
+
+                       </div>
+                       <div class="instructor-item col-xl-4 col-lg-6  col-md-4 col-12">
+                        <div class="card">
+                            <div class="instructor-photo">
+                                <img src="../assets/img/avater/9mCNr06.jpg" class="img-fluid" alt="...">
+                            </div>
+                           
+                            <div class="card-body">
+                              <p class="instructor-subject">Physics Teacher</p>
+                              <h5 class="card-title"><a href="./instructor-detail.html">Alisha P. Paradis</a></h5>
+                              <div class="star-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <span >(244 Reviews)</span>
+                              </div>
+                            </div>
+                           
+                            <div class="card-footer">
+                             <div class="enrolled-number">
+                              <i class="fa fa-user"></i>
+                              2.5k Users Enrolled
+                             </div>
+                            </div>
+                          </div>
+
+                       </div>
+                       <div class="instructor-item col-xl-4 col-lg-6  col-md-4 col-12">
+                        <div class="card">
+                            <div class="instructor-photo">
+                                <img src="../assets/img/avater/9mCNr06.jpg" class="img-fluid" alt="...">
+                            </div>
+                           
+                            <div class="card-body">
+                              <p class="instructor-subject">Physics Teacher</p>
+                              <h5 class="card-title"><a href="./instructor-detail.html">Alisha P. Paradis</a></h5>
+                              <div class="star-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <span >(244 Reviews)</span>
+                              </div>
+                            </div>
+                           
+                            <div class="card-footer">
+                             <div class="enrolled-number">
+                              <i class="fa fa-user"></i>
+                              2.5k Users Enrolled
+                             </div>
+                            </div>
+                          </div>
+
+                       </div>
+                       <div class="instructor-item col-xl-4 col-lg-6  col-md-4 col-12">
+                        <div class="card">
+                            <div class="instructor-photo">
+                                <img src="../assets/img/avater/9mCNr06.jpg" class="img-fluid" alt="...">
+                            </div>
+                           
+                            <div class="card-body">
+                              <p class="instructor-subject">Physics Teacher</p>
+                              <h5 class="card-title"><a href="./instructor-detail.html">Alisha P. Paradis</a></h5>
+                              <div class="star-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <span >(244 Reviews)</span>
+                              </div>
+                            </div>
+                           
+                            <div class="card-footer">
+                             <div class="enrolled-number">
+                              <i class="fa fa-user"></i>
+                              2.5k Users Enrolled
+                             </div>
+                            </div>
+                          </div>
+
+                       </div>
+
+                       <div class="pagination-more col-12">
+                         <nav aria-label="Page navigation ">
+                           <ul class="pagination justify-content-center">
+                             <li class="page-item ">
+                               <a class="page-link"><i class="fas fa-angle-left"></i></a>
+                             </li>
+                             <li class="page-item"><a class="page-link" href="#">1</a></li>
+                             <li class="page-item"><a class="page-link" href="#">2</a></li>
+                             <li class="page-item active"><a class="page-link" href="#">3</a></li>
+                             <li class="page-item"><a class="page-link" href="#">...</a></li>
+                             <li class="page-item"><a class="page-link" href="#">18</a></li>
+                             <li class="page-item">
+                               <a class="page-link" href="#"><i class="fas fa-angle-right"></i></i></a>
+                             </li>
+                           </ul>
+                         </nav>
+                       </div>
+                     </div>           
+               </div>
+            </div>
+        </div>
+    </section>
+
+     <!---------------  ------------------------->
+     <!----------- Find end ------------>
+     <!----------------  ----------------------->
+
+
+    <!---------------  ------------------------->
+    <!--------- Call to Action start ------------->
+    <!----------------  ----------------------->
+    <section class="call-to-action">
+        <div class="container">
+          <div class="row">
+            <div class="question  col-md-6 col-12">
+              <h3>Do You Have Any Queries?</h3>
+              <p>We will assist you in furthering your career and growth.</p>
+            </div>
+            <div class="action col-md-6 col-12">
+              <a class="btn btn-customize " href="">
+                Talk to us
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <!---------------  ------------------------->
+      <!----------- Call to Action end ------------>
+      <!----------------  ----------------------->
+  
+  
+       <!---------------  ------------------------->
+      <!----------- Footer start ------------------>
+      <!----------------  ----------------------->
+  
+      <footer>
+        <div class="d-flex flex-column">
+          <div class="footer-top">
+            <h4>You Can Find Us At</h4>
+            <ul class="row">
+              <li><a><i class="fab fa-facebook-square"></i></a></li>
+              <li><a><i class="fab fa-linkedin "></i></a></li>
+              <li><a><i class="fab fa-twitter-square"></i></a></li>
+              <li><a><i class="fab fa-youtube-square"></i></a></li>
+            </ul>
+          </div>
+          <div class="footer-middle">
+              <div class="container">
+                <div class="row" >
+                   <div class="col-lg-3 col-md-6 col-12 mb-md-5">
+                     <div class="logo">
+                       <img class="img-fluid" src="../assets/img/logo/logo-light.png" alt="" srcset="">
+                     </div>
+                     <div class="why-us-btn d-flex justify-content-between c-white callpse d-md-none mb-3"data-toggle="collapse" data-target="#why-us" aria-expanded="false">
+                        Why us  <i class="fas fa-angle-down "></i>
+                     </div>
+                     <div class="why-us d-md-block collapse" id="why-us">
+                        <h2>Do you require assistance with anything?</h2>
+                        <p>Every month, receive updates, hot deals, tutorials, and discounts delivered directly to your inbox.</p>
+                        <div class="input-group">
+                          <input type="text" class="form-control" placeholder="Your Email" aria-label="Recipient's username" aria-describedby="button-addon2">
+                          <div class="input-group-append">
+                            <button class="btn btn-customize" type="button" id="button-addon2">Submit</button>
+                          </div>
+                        </div>
+                     </div>
+                   </div>
+                   <div class="col-lg-3 col-md-5 col-12 text-lg-center">
+                    <h5 class="title d-md-block d-none">Company</h5>
+                    <div class="more-btn  c-white callpse d-flex justify-content-between d-md-none mb-3"data-toggle="collapse" data-target="#Company" aria-expanded="false">
+                      Company <i class="fas fa-angle-down "></i>
+                   </div>
+                    <ul class="d-flex-column collapse" id="Company">
+                      <li><a href="">iDemy Business</a></li>
+                      <li><a href="">Teach on iDemy</a></li>
+                      <li><a href="">Get the app</a></li>
+                      <li><a href="">About us</a></li>
+                      <li><a href="">Contact us</a></li>
+                    </ul>
+                   </div>
+                   <div class="col-lg-3 col-md-5 col-12 text-lg-center">
+                    <h5 class="title  d-md-block d-none">Customer</h5>
+                    <div class="company-btn  c-white callpse d-flex justify-content-between d-md-none mb-3"data-toggle="collapse" data-target="#Customer" aria-expanded="false">
+                      Customer <i class="fas fa-angle-down"></i>
+                   </div>
+                    <ul class="d-flex-column collapse" id="Customer">
+                      <li><a href="">iDemy Business</a></li>
+                      <li><a href="">Teach on iDemy</a></li>
+                      <li><a href="">Get the app</a></li>
+                      <li><a href="">About us</a></li>
+                      <li><a href="">Contact us</a></li>
+                    </ul>
+                   </div>
+                   <div class="col-lg-3 col-md-5 col-12 text-lg-center">
+                    <h5 class="title d-md-block d-none">More</h5>
+                    <div class="more-btn  c-white callpse d-flex justify-content-between d-md-none mb-3"data-toggle="collapse" data-target="#More" aria-expanded="false">
+                      More <i class="fas fa-angle-down "></i>
+                   </div>
+                    <ul class="d-flex-column collapse" id="More">
+                      <li><a href="">iDemy Business</a></li>
+                      <li><a href="">Teach on iDemy</a></li>
+                      <li><a href="">Get the app</a></li>
+                      <li><a href="">About us</a></li>
+                      <li><a href="">Contact us</a></li>
+                    </ul> 
+                   </div>
+                </div>
+              </div>
+          </div>
+          <div class="footer-end">
+            <p class="mb-0">©2022 iDemy. By LoopCode</p>
+          </div>
+        </div>
+      </footer>
+  
+      <!---------------  ------------------------->
+      <!----------- Footer end ------------------>
+      <!----------------  ----------------------->
+  
+      <!---------------  ------------------------->
+      <!----------- Scroll to top start ---------->
+      <!----------------  ----------------------->
+      <a class="btn-scroll-to-top">
+        <i class="fas fa-chevron-up"></i>
+      </a>
+  
+      <!---------------  ------------------------->
+      <!----------- Scroll to top end  ------------------>
+      <!----------------  ----------------------->
+  
+  
+      <!---------------  ------------------------->
+      <!----------- SignIn Modal start ------------>
+      <!----------------  ----------------------->
+      
+       <div class="modal fade" id="SignIn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Login Your Account
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="login-form">
+                            <form>
+                              <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                               
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                              </div>
+                              <div class="form-group row">
+                                <div class="col-4 from-group-item">
+                                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Admin</label>
+                                </div>
+                                <div class="col-4 from-group-item">
+                                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Student</label>
+                                </div>
+                                <div class="col-4 from-group-item">
+                                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Tutors</label>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <button class="btn btn-customize form-submit">Submit</button>
+                              </div>
+                              <div class="social">
+                                <h5 class="title">Or Login with Social Info</h5>
+                                <ul class="social-icon row">
+                                  <li class="social-item col-4">
+                                    <a href="">
+                                      <i class="fab fa-facebook-square"></i>
+                                      Facebook
+                                    </a>
+                                    
+                                  </li>
+                                  <li class="social-item col-4">
+                                    <a href="">
+                                      <i class="fab fa-linkedin "></i>
+                                      LinkedIn
+                                    </a>
+                                    
+                                  </li>
+                                  <li class="social-item col-4">
+                                    <a href="">
+                                      <i class="fab fa-twitter-square"></i>
+                                      Twitter
+                                    </a>   
+                                  </li>
+                                </ul>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                        <div class="modal-footer login-in-footer ">
+                          <div class="signup col-6">
+                            <p>Don't have account? <a href="">SignUp</a></p>
+                          </div>
+                          <div class="forget-password col-5">
+                            <a href="" class="text-danger">Forgot Password</a>
+                          </div>
+                        </div>
+                    </div>
+                    </div>
+       </div>
+  
+      <!---------------  ------------------------->
+      <!-----------SignIn Modal end  -------------->
+      <!----------------  ----------------------->
+    
+   
+</body>
+</html>
