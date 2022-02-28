@@ -3183,3 +3183,93 @@ section.all-details .all-details-tabs .nav .nav-item .nav-link.active, .nav-item
 /*---------------------------- */
 /*   Course-detail page end  */
 /* ------------------------   */
+
+
+
+/*---------------------------- */
+/*   navbar start  */
+/* ------------------------   */
+#Find-instructor .navbar{
+    background-color: var(--white);
+    box-shadow:var(--box-shadow);
+    position:sticky !important;
+
+}
+#Find-instructor .navbar.scrolled{
+    position: fixed !important; 
+}
+/*---------------------------- */
+/*   navbar end  */
+/* ------------------------   */
+#Find-instructor  .instructors{
+    margin-top: 2rem;
+}
+#Find-instructor  .instructors .instructor-item{
+    margin-bottom: 2rem;
+}
+#Find-instructor  .instructors .card{
+    border: 0;
+    box-shadow:var(--box-shadow);
+    border-radius: 0.5rem;
+}
+#Find-instructor  .instructors .card .instructor-photo{
+    width: 110px;
+    height: 110px;
+    overflow: hidden;
+    margin: 2.2rem  auto 0;
+    
+    border-radius: var(--border-radius-circle);
+    
+    -webkit-border-radius: var(--border-radius-circle);
+    -moz-border-radius: var(--border-radius-circle);
+    -ms-border-radius: var(--border-radius-circle);
+    -o-border-radius: var(--border-radius-circle);
+}
+#Find-instructor  .instructors .card .card-body{
+    text-align: center;
+
+}
+#Find-instructor  .instructors .card .card-body p{
+    padding: 0.2rem 0.7rem;
+    color: #ffffff;
+    background: #03b97c;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-bottom:7px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+#Find-instructor  .instructors .card .card-body .card-title{
+    margin-bottom: 0.5rem;
+    line-height: 1;
+    font-size: 20px;
+}
+#Find-instructor  .instructors .card .card-body .card-title a{
+    color: #30384e;
+
+}
+#Find-instructor  .instructors .card .card-body .star-rating{
+    color: #4e6579;
+    font-size: 10px;
+}
+#Find-instructor  .instructors .card .card-body .star-rating i{
+    color: #ff9800;
+}
+#Find-instructor  .instructors .card .card-footer{
+    border-top: 1px solid #eff3f7;
+    background-color:transparent
+}
+#Find-instructor  .instructors .card .card-footer .enrolled-number{
+    font-weight: 600;
+    font-size: 13px;
+    color: #4e6579;
+}
+#Find-instructor  .instructors .card .card-footer .enrolled-number i{
+    margin-right: 5px;
+}
