@@ -3184,7 +3184,9 @@ section.all-details .all-details-tabs .nav .nav-item .nav-link.active, .nav-item
 /*   Course-detail page end  */
 /* ------------------------   */
 
-
+/*---------------------------- */
+/*   Find-instructor page start  */
+/* ------------------------   */
 
 /*---------------------------- */
 /*   navbar start  */
@@ -3273,3 +3275,7 @@ section.all-details .all-details-tabs .nav .nav-item .nav-link.active, .nav-item
 #Find-instructor  .instructors .card .card-footer .enrolled-number i{
     margin-right: 5px;
 }
+
+/*---------------------------- */
+/*   Find-instructor page end  */
+/* ------------------------   */
