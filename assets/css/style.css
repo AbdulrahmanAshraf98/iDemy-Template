@@ -3279,3 +3279,79 @@ section.all-details .all-details-tabs .nav .nav-item .nav-link.active, .nav-item
 /*---------------------------- */
 /*   Find-instructor page end  */
 /* ------------------------   */
+
+/*---------------------------- */
+/*   navbar start  */
+/* ------------------------   */
+#Explore-category .navbar{
+    background-color: var(--white);
+    box-shadow:var(--box-shadow);
+    position:sticky !important;
+
+}
+#Explore-category .navbar.scrolled{
+    position: fixed !important; 
+}
+/*---------------------------- */
+/*   navbar end  */
+/* ------------------------   */
+
+/*---------------------------- */
+/*   header-title start  */
+/* ------------------------   */
+#Explore-category header.header-title{
+    background-color: var(--section-color-grey);
+    padding: 80px 0;
+
+}
+/*---------------------------- */
+/*   header-title start  */
+/* ------------------------   */
+/*---------------------------- */
+/*   featured-categories start  */
+/* ------------------------   */
+
+#Explore-category  .featured-categories .category-item{
+    padding: 1.5rem 1.2rem;
+}
+#Explore-category .featured-categories .category-item .icon{
+    margin: 0;
+    width: 10%;
+    background:transparent;
+}
+
+#Explore-category  .featured-categories .category-item:hover .icon{
+    background:transparent;
+    color:var(--white);
+}
+#Explore-category  .featured-categories .category-item .courses-link{
+    color: #292b31;
+    text-decoration: underline;
+    font-size: 13px;
+    font-weight: 600;
+}
+#Explore-category  .featured-categories .category-item:hover .courses-link{
+    color: #ffc107;
+}
+#Explore-category .featured-categories .category-item .desc{
+    text-align: left;
+}
+#Explore-category .featured-categories .category-item .desc p{
+    color: var(--text-color-p);
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: .5rem;
+}
+#Explore-category .featured-categories .category-item .desc h4{
+    font-size: 1.4rem;
+}
+#Explore-category .featured-categories .category-item:hover .desc h4{
+    color: var(--white);
+   
+}
+#Explore-category .featured-categories .category-item:hover .desc p{
+    color: var(--white);
+}
+/*---------------------------- */
+/*   featured-categories end  */
+/* ------------------------   */
