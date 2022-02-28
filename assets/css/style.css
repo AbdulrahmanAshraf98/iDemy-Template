@@ -2465,3 +2465,721 @@ section.instructor-details .instructor-detail .instructor-info .instructor-ratin
 /*---------------------------- */
 /*   media  end  */
 /* ------------------------   */
+
+/*---------------------------- */
+/*   Courses-grid-style-page page end  */
+/* ------------------------   */
+
+/*---------------------------- */
+/*   Course-detail page start  */
+/* ------------------------   */
+
+/*---------------------------- */
+/*   navbar start  */
+/* ------------------------   */
+#Course-detail .navbar{
+    background-color: var(--white);
+    box-shadow:var(--box-shadow);
+    position:sticky !important;
+
+}
+#Course-detail .navbar.scrolled{
+    position: fixed !important; 
+}
+/*---------------------------- */
+/*   navbar end  */
+/* ------------------------   */
+
+/*---------------------------- */
+/*   about-course start  */
+/* ------------------------   */
+
+section.about-course{
+    padding: 80px 0;
+    background-color: #051B3E;
+}
+section.about-course .course-info .course-specialize{
+    gap:1%;
+    margin-bottom: .5rem;
+}
+section.about-course  .course-info .course-specialize .b-c-Cyan,.b-c-pink{
+    padding: 5px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    border-radius: 10px;
+   
+}
+section.about-course  .course-info .course-specialize .b-c-Cyan>p,.b-c-pink>p{
+    margin: 0;
+}
+section.about-course   .course-info .course-name h2{
+    color: var(--white)
+}
+section.about-course   .course-info .cources-details{
+    margin-bottom: .5rem;
+   
+}
+section.about-course   .course-info .cources-details ul{
+    margin: 0;
+}
+
+section.about-course   .course-info .cources-details ul li{
+    width: 25%;
+    font-size: 14px;
+    display: flex;
+    gap: 3%;
+    align-items: center;
+    color: var(--white)
+}
+section.about-course   .course-info .cources-details ul li:last-child{
+    gap: 2%;
+    flex: 1;
+}
+section.about-course .course-info   .course-short-desc p{
+    color: var(--white)
+}
+section.about-course .course-info  .course-rating{
+    align-items: baseline;
+    gap: 2%;
+}
+section.about-course .course-info   .course-rating .star-rating i{
+    font-size: 11px;
+    color: #f1992c;
+
+}
+section.about-course .course-info   .course-rating .star-rating i:last-of-type{
+    color: #ced7e8; 
+
+}
+section.about-course .course-info  .course-rating .review-count{
+    font-size: 12.5px;
+    color: var(--white)
+}
+section.about-course .course-info  .course-rating .review-count span{
+    font-size: 1rem;
+    color: #7baf17;
+    margin-right: 5px;
+
+}
+/*---------------------------- */
+/*   about-course end  */
+/* ------------------------   */
+
+/*---------------------------- */
+/*   all-details start  */
+/* ------------------------   */
+section.all-details{
+    padding: 50px 0;
+    background-color: var(--section-color-grey)
+}
+section.all-details .all-details-tabs .nav{
+    gap:2%;
+}
+section.all-details  .all-details-tabs .nav .nav-item{
+    flex: 1;
+    text-align: center;
+}
+section.all-details .all-details-tabs .nav  .nav-item  .nav-link{
+    padding: 1rem 1.3rem;
+    background: var(--white);
+    color: #30384e;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 0.25rem;
+}
+section.all-details .all-details-tabs .nav .nav-item .nav-link.active, .nav-item .show>.nav-link{
+    background-color: var(--main-color);
+    color:var(--white);
+}
+
+
+.wraper{
+    width: 100%;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 0.5rem;
+    margin-bottom: 1.9rem;
+}
+.wraper h5{
+    margin-bottom: 1rem;
+    font-size: 18px;
+}
+ .wraper h6{
+    margin-bottom: 1rem;
+}
+.wraper ul li{
+    
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    margin: 0;
+    padding: 0 1rem 0.5rem 0rem;
+    color: #3c4852;
+    font-size: 15px;
+    font-family: var(--font-family-Mulish);
+    opacity: .8;
+}
+.wraper ul li i{
+    font-size: 12px;
+
+}
+/*---------------------------- */
+/*       circullum-tab start       */
+/* ------------------------   */
+.circullum .accordion .card{
+    margin-bottom: 10px;
+    border: 1px solid #e9ecef;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    padding: 0 1rem;
+
+}
+.circullum .accordion .card .card-header{
+    background-color:transparent;
+    border: 0 !important;
+    padding: 0.75rem 0;
+}
+.circullum .accordion .card .card-header a{
+    padding: 0;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.circullum .accordion .card .card-header a::after{
+    content: "";
+    width: 15px;
+    height: 2px;
+    background-color: black;
+    margin-left: auto;
+    transition:all .4s linear;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transition:all .4s linear;
+    -moz-transition:all .4s linear;
+    -ms-transition:all .4s linear;
+    -o-transition:all .4s linear;
+}
+.circullum .accordion .card .card-header a[aria-expanded='true']::after{
+    transform: rotate(180deg);
+}
+.circullum .accordion .card .card-header a::before{
+   content: "";
+   width: 15px;
+   height: 2px;
+   background-color: black;
+   position: absolute;
+   right:0;
+   transition:all .3s linear;
+   -webkit-transition:all .3s linear;
+   -moz-transition:all .3s linear;
+   -ms-transition:all .3s linear;
+   -o-transition:all .3s linear;
+   transform: rotate(90deg);
+   -webkit-transform: rotate(90deg);
+   -moz-transform: rotate(90deg);
+   -ms-transform: rotate(90deg);
+   -o-transform: rotate(90deg);
+}
+.circullum .accordion .card .card-header a[aria-expanded='true']::before{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+.circullum  .content .lecture-list{
+}
+.circullum .content .lecture-list  li{
+    padding: 1rem 5px .5rem 0rem;
+}
+.circullum .content .lecture-list  li i{
+    width: 26px;
+    height: 26px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:var(--border-radius-circle);
+    -webkit-border-radius:var(--border-radius-circle);
+    -moz-border-radius:var(--border-radius-circle);
+    -ms-border-radius:var(--border-radius-circle);
+    -o-border-radius:var(--border-radius-circle);
+    font-size: 10px;
+    background: rgba(3, 185, 124,0.12);
+    border: 2px solid rgba(3, 185, 124,0.12);
+    color: var(--main-color);
+}
+.circullum  .lecture-list li .lecture-timing{
+    margin-left: auto;
+}
+
+.circullum  .content .lecture-list  li.progressing i{
+    border-top-color: #e0f6ef;
+    border-right-color: var(--main-color);;
+    border-bottom-color: var(--main-color);;
+    border-left-color:#e0f6ef ;
+}
+.circullum  .content .lecture-list  li.unview i{
+    background: rgba(255, 152, 0,0.12);
+    color: #ff9800;
+    border: 2px solid rgba(255, 152, 0,0.12);
+}
+/*---------------------------- */
+/*       circullum-tab end       */
+/* ------------------------   */
+
+/*---------------------------- */
+/*       instractor-tab start       */
+/* ------------------------   */
+.instractor-tab .wraper{
+    padding: 1rem;
+}
+.instractor-tab .card{
+    border:0;
+}
+.instractor-tab .card .card-body{
+    padding: 0.5rem 0 0 1.9rem;
+
+}
+
+.instractor-tab .img-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.instractor-tab .card-title{
+    margin-bottom:.2rem ;
+}
+.instractor-tab .cources-details {
+    margin-bottom: 1rem;
+}
+.instractor-tab .cources-details ul{
+    margin:0;
+}
+.instractor-tab .cources-details .row li{
+    gap:3%;
+    width: 28%;
+    padding: 0 0 .5rem 0;
+    font-size: 13px;
+
+}
+.instractor-tab .cources-details .row li:last-child{
+    flex: 1;
+}
+.instractor-tab .card .social-icon{
+    margin:0;
+}
+.instractor-tab .card .social-icon li a{
+    width: 36px;
+    height: 36px;
+    display: flex;
+    background: rgba(3, 185, 124,0.1);
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(3, 185, 124,0.1);
+    border-radius: 4px;
+    font-size: 12px;
+    color: #03b97c;
+}
+/*---------------------------- */
+/*       instractor-tab end       */
+/* ------------------------   */
+/*---------------------------- */
+/*       review-tab start       */
+/* ------------------------   */
+.review-tab  .wraper h5{
+    color: #334e6f;
+}
+.review-tab .review-stats{
+    padding: 1rem;
+}
+.review-tab .review-stats .card{
+    border: 0;
+}
+.review-tab .review-stats .card div.row{
+    gap: 5%;
+    align-items: flex-start;
+}
+.review-tab .review-stats  .rating-overview{
+    border-right: 1px solid #e8e8e8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+} 
+.review-tab .review-stats  .rating-overview p{
+    margin: 0;
+}
+.review-tab .review-stats  .rating-overview p:first-child{
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #2a2f3a;
+}
+.review-tab .review-stats  .rating-overview p:nth-child(2){
+    font-size: 15px;
+    color: #3c4852;
+
+}
+.review-tab  .star-rating{
+    color: #fbb851;
+}
+.review-tab .card-body{
+    padding: 0 1rem;
+}
+.review-tab  .rating-bars li{
+    flex-direction: column;
+    align-items: unset;
+    margin-bottom: 0;
+}
+
+.review-tab  .rating-bars li .progress{
+    height: 5px;
+}
+
+
+.review-tab .reviews-comments .review-item{
+    margin-top: 2.5rem;
+    border-bottom: 1px solid #eee;
+
+}
+.review-tab .reviews-comments .review-item:last-child{
+    border-bottom: none;
+}
+.review-tab .reviews-comments .review-item  .reviewer-img .box-img{
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.review-tab .reviews-comments .review-item .review-item-content{
+    padding: 0 20px;
+}
+.review-tab .reviews-comments .review-item .review-item-content h4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+}
+.review-tab .reviews-comments .review-item .review-item-content h4 span{
+    font-weight: 500;
+    color: #86889a;
+    font-size: 13px;
+   
+
+}
+.review-tab .reviews-comments .review-item .review-item-content h4 span i{
+    color:var(--main-color);
+    margin-right: 5px;
+}
+.review-tab .reviews-comments .review-item .review-item-content .star-rating{
+    margin-bottom: 1rem;
+}
+.review-tab .reviews-comments .review-item .review-item-content .star-rating i{
+    font-size: 10px;
+}
+.review-tab .reviews-comments .review-item .review-item-content .review-reaction{
+    display: flex;
+    gap: 20px;
+    align-items: baseline;
+    margin-bottom: 2rem;
+}
+.review-tab .reviews-comments .review-item .review-item-content .review-reaction a{
+    font-size: 15px;
+    font-family: var(--font-family-Mulish);
+    color: #8c97a2;
+
+}
+.review-tab .reviews-comments .review-item .review-item-content .review-reaction a i{
+    margin-right: 3px;
+}
+.review-tab .reviews-comments .review-item .review-item-content .review-reaction .comment-like.active{
+    color: var(--main-color);
+    
+}
+.review-tab .reviews-comments .review-item .review-item-content .review-reaction .comment-dislike.active{
+    color: #244763;
+
+}
+.review-tab .reviews-comments .review-item .review-item-content .review-reaction .comment-love.active{
+    color: #ea1a57;
+
+}
+.review-tab .review-submit .form-row {
+    gap:3%;
+}
+.review-tab .review-submit label{
+    color: #707e9c;
+
+    font-size: 13px;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+.review-tab .review-submit .btn-customize{
+    width: 25%;
+}
+
+/*---------------------------- */
+/*       review-tab end       */
+/* ------------------------   */
+
+
+/*---------------------------- */
+/* all-details-siderbar start */
+/* ------------------------   */
+
+
+.all-details-siderbar .card{
+    margin-top: -350px;
+    position: sticky;
+    top: 120px;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    background: var(--white);
+    border:0;
+}
+.all-details-siderbar .card .img-box{
+    position: relative;
+}
+.all-details-siderbar .card .img-box::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #17203a;
+    opacity: 0.3;
+
+}
+.all-details-siderbar .card .img-box .play-icon{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    border: 1px dashed #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.all-details-siderbar .card .img-box .play-icon i{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,1);
+    color: var(--main-color);
+}
+
+.all-details-siderbar  .card-body .course-price{
+    margin-bottom: 1rem;
+
+}
+.all-details-siderbar  .card-body .course-price p{
+    margin: 0;
+    font-size: 13px;
+}
+.all-details-siderbar  .card-body .course-price h2{
+    color:var(--main-color);
+
+}
+.all-details-siderbar .card-body .features p{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #485067;
+}
+.all-details-siderbar  .card-body .features ul li{
+    display: flex;
+    align-items: center;
+    gap:5%;
+    font-size: .9rem;
+    margin-bottom: .5rem;
+}
+.all-details-siderbar .card-body .features ul li i{
+    width: 29px;
+    height: 29px;
+    font-size: 10px;
+    background: rgba(3, 185, 124,0.11);
+    color: #03b97c;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.all-details-siderbar .card-body .btn-customize {
+    width: 100%;
+    margin-bottom: .5rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5%;
+}
+.all-details-siderbar .card-body .btn-get-member{
+    border: 1px dashed;
+    background: rgba(3, 185, 124,0.1) ;
+    color: var(--main-color);
+
+
+}
+
+/*---------------------------- */
+/*   all-details end  */
+/* ------------------------   */
+
+
+/*---------------------------- */
+/*      media start              */
+/* ------------------------   */
+@media (max-width: 1100px){
+    .all-details-siderbar .card-body .features ul li{
+        gap:2%;
+        font-size: 0.7rem;
+
+    }
+    .all-details-siderbar .card-body .features ul li i{
+        width: 20px;
+        height: 20px;
+        font-size: 8px;
+
+    }
+}
+@media (max-width: 991px)
+{
+    section.all-details .all-details-tabs .nav .nav-item{
+        margin-bottom: 1rem;
+        border-bottom: 0;
+    }
+    .wraper p{
+        font-size: 14px;
+    }
+    .overview .wraper ul li{
+        align-items: baseline;
+        padding: 0 0 0.5rem 0rem;
+        font-size: 14px;
+
+    }
+    .all-details-siderbar .card{
+        margin-top: 0;
+        position: static;
+        top:unset;
+    }
+
+ 
+}
+@media (max-width: 576px){
+    .wraper{
+        padding: 2rem 1rem;
+    }
+    section.about-course .course-info .cources-details ul{
+
+    }
+    section.about-course .course-info .cources-details ul li{
+        width: 50%;
+        margin-bottom:1rem;
+        align-items: baseline;
+
+    }
+    .circullum .accordion .card .card-header a{
+        font-size: 0.7rem;
+        text-align: left;
+    }
+    .content .lecture-list li{
+        font-size: 0.7rem;
+    }
+    .instractor-tab .card .card-body {
+        padding: 0.5rem 0 0 0;
+    }
+    .instractor-tab .cources-details .row li{
+        font-size: 11px;
+        align-items: baseline;
+        gap: 5%;
+    }
+  
+    .review-tab .review-stats .rating-overview{
+        border-right:none;
+
+    }
+    .review-tab .review-submit .btn-customize{
+        width: 45%;
+    }
+    .reviews-comments .review-item .reviewer-img .box-img{
+        width: 50px;
+        height: 50px;
+    }
+    .reviews-comments .review-item .review-item-content h4{
+        font-size: 1rem;
+    }
+    .reviews-comments .review-item .review-item-content h4 span i{
+        margin-right: 2px;
+    }
+    .reviews-comments .review-item .review-item-content .star-rating{
+        margin-bottom: .5rem;
+    }
+    .reviews-comments .review-item .review-item-content p{
+        font-size: 12px;
+    }
+    
+}
+@media (max-width: 320px){
+    section.about-course .course-info .course-name h2{
+        font-size: 1.5rem;
+
+    }
+    .instractor-tab .cources-details .row li{
+        font-size: 10px;
+        align-items: baseline;
+        gap:0;
+
+    }
+    .reviews-comments .review-item .review-item-content h4{
+        font-size: 14px;
+    }
+    .reviews-comments .review-item .review-item-content h4 span{
+        font-size: 10px;
+
+    }
+    .review-tab .review-submit .btn-customize{
+        width: 60%;
+    }
+}
+/*---------------------------- */
+/*      media end              */
+/* ------------------------   */
+/*---------------------------- */
+/*   Course-detail page end  */
+/* ------------------------   */
