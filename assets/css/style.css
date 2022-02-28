@@ -3137,20 +3137,20 @@ section.all-details .all-details-tabs .nav .nav-item .nav-link.active, .nav-item
     .review-tab .review-submit .btn-customize{
         width: 45%;
     }
-    .reviews-comments .review-item .reviewer-img .box-img{
-        width: 50px;
-        height: 50px;
+    .review-tab  .reviews-comments .review-item .reviewer-img .box-img{
+        width: 50px !important;
+        height: 50px !important;
     }
-    .reviews-comments .review-item .review-item-content h4{
+    .review-tab .reviews-comments .review-item .review-item-content h4{
         font-size: 1rem;
     }
-    .reviews-comments .review-item .review-item-content h4 span i{
+    .review-tab  .reviews-comments .review-item .review-item-content h4 span i{
         margin-right: 2px;
     }
-    .reviews-comments .review-item .review-item-content .star-rating{
+    .review-tab  .reviews-comments .review-item .review-item-content .star-rating{
         margin-bottom: .5rem;
     }
-    .reviews-comments .review-item .review-item-content p{
+    .review-tab  .reviews-comments .review-item .review-item-content p{
         font-size: 12px;
     }
     
@@ -3166,10 +3166,10 @@ section.all-details .all-details-tabs .nav .nav-item .nav-link.active, .nav-item
         gap:0;
 
     }
-    .reviews-comments .review-item .review-item-content h4{
+    .review-tab .reviews-comments .review-item .review-item-content h4{
         font-size: 14px;
     }
-    .reviews-comments .review-item .review-item-content h4 span{
+    .review-tab .reviews-comments .review-item .review-item-content h4 span{
         font-size: 10px;
 
     }
