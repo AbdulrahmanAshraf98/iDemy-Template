@@ -1388,7 +1388,7 @@ section.find .sidebar .filiter-type .widget {
     padding-top: 5%;
 }
 
-.top-instructor .owl-carousel .owl-nav{
+ .owl-carousel .owl-nav{
     position: absolute;
     top: 50%;
     left: -2%;
@@ -1410,7 +1410,6 @@ section.find .sidebar .filiter-type .widget {
     -moz-border-radius: var(--border-radius-circle);
     -ms-border-radius: var(--border-radius-circle);
     -o-border-radius: var(--border-radius-circle);
-    font-size: 18px;
 }
 .owl-carousel .owl-nav button.owl-next span, .owl-carousel .owl-nav button.owl-prev span{
     width: 20px;
@@ -3281,6 +3280,10 @@ section.all-details .all-details-tabs .nav .nav-item .nav-link.active, .nav-item
 /* ------------------------   */
 
 /*---------------------------- */
+/*   Explore-category page start  */
+/* ------------------------   */
+
+/*---------------------------- */
 /*   navbar start  */
 /* ------------------------   */
 #Explore-category .navbar{
@@ -3305,7 +3308,7 @@ section.all-details .all-details-tabs .nav .nav-item .nav-link.active, .nav-item
 
 }
 /*---------------------------- */
-/*   header-title start  */
+/*   header-title end  */
 /* ------------------------   */
 /*---------------------------- */
 /*   featured-categories start  */
@@ -3354,4 +3357,202 @@ section.all-details .all-details-tabs .nav .nav-item .nav-link.active, .nav-item
 }
 /*---------------------------- */
 /*   featured-categories end  */
+/* ------------------------   */
+
+/*---------------------------- */
+/*   Explore-category page end  */
+/* ------------------------   */
+
+
+/*---------------------------- */
+/*      About page start       */
+/* ------------------------   */
+
+
+/*---------------------------- */
+/*   navbar start  */
+/* ------------------------   */
+#About .navbar{
+    background-color: var(--white);
+    box-shadow:var(--box-shadow);
+    position:sticky !important;
+
+}
+#About.navbar.scrolled{
+    position: fixed !important; 
+}
+/*---------------------------- */
+/*   navbar end  */
+/* ------------------------   */
+
+/*---------------------------- */
+/*   header-title start  */
+/* ------------------------   */
+#About header.header-title{
+    background-color: var(--section-color-grey);
+
+}
+/*---------------------------- */
+/*   header-title end  */
+/* ------------------------   */
+
+/*---------------------------- */
+/*   about-us start  */
+/* ------------------------   */
+#About .about-us{
+    padding: 80px 0;
+}
+#About .about-us h6{
+    color: #03b97c !important;
+    margin: 0;
+    line-height: 1;
+}
+#About .about-us h2{
+    margin-bottom: 1rem;
+    line-height: 32px;
+
+}
+#About .about-us p{
+    font-size: 1rem;
+}
+#About .about-us .col{
+    padding: 0;
+
+}
+#About .about-us .col li{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+#About  .about-us .btn-customize{
+    width: 30%;
+}
+/*---------------------------- */
+/*   about-us end  */
+/* ------------------------   */
+
+/*---------------------------- */
+/*   trustby start  */
+/* ------------------------   */
+#About  .trustby{
+    padding: 80px 0;
+    background-color: var(--section-color-grey)
+}
+#About  .trusted-company{
+    margin-top: 1rem;
+
+}
+#About  .trusted-company>*{
+    padding: 1rem;
+}
+
+
+#About .students-reviews{
+    padding: 50px 0
+}
+#About .students-reviews .title-center{
+    margin-bottom: 2rem;
+}
+
+#About .student-review-item{
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 6px;
+    padding: 2rem;
+    border: 1px solid #e9ecef !important;
+}
+#About .student-info{
+    align-items: center;
+}
+#About .student-detail{
+    flex: 1;
+    align-items: center; 
+    gap: 5%;
+    
+}
+#About .student-img{
+    width: 70px;
+    height: auto;
+    overflow: hidden;
+    border-radius: var(--border-radius-circle);
+    -webkit-border-radius: var(--border-radius-circle);
+    -moz-border-radius: var(--border-radius-circle);
+    -ms-border-radius: var(--border-radius-circle);
+    -o-border-radius: var(--border-radius-circle);
+}
+#About .student-detail .info h5{
+    font-size:14px;
+    line-height: 8px;
+    color: #333d46;
+
+}
+#About .student-detail .info h6{
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 400;
+    margin: 0;
+}
+#About .company-name{
+
+    display: flex;
+    justify-content: flex-end;
+
+}
+#About .company-img{
+    
+    width: 50px;
+    height:auto;
+    overflow: hidden;
+    border-radius: var(--border-radius-circle);
+    -webkit-border-radius: var(--border-radius-circle);
+    -moz-border-radius: var(--border-radius-circle);
+    -ms-border-radius: var(--border-radius-circle);
+    -o-border-radius: var(--border-radius-circle);
+}
+
+#About .student-review-item .desc p{
+    margin: 0;
+    line-height: 1.5;
+}
+
+/*---------------------------- */
+/*   trustby end  */
+/* ------------------------   */
+@media(max-width: 1100px){
+    #About .student-img{
+        width: 50px;
+    }
+}
+@media(max-width: 576px){
+    #About .about-us .btn-customize{
+        width: 45%;
+    }
+    
+    #About .student-detail{
+        gap: 2%;
+    }
+    #About .student-img{
+        width: 50px;
+        height: auto;
+        
+    }
+   
+    #About .company-img {
+        width: 40px;
+    }
+
+    #About .student-review-item .desc p{
+        font-size: 12px;
+        line-height: 1.5;
+    }
+}
+@media(max-width: 320px){
+    #About .about-us h2{
+        font-size:1.5rem;
+    }
+}
+
+/*---------------------------- */
+/*      About page end       */
 /* ------------------------   */
