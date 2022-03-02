@@ -87,6 +87,35 @@ $(document).ready(function () {
 				},
 			},
 		});
-	} catch {}
-	
+	} catch (e) {
+		console.log(e.message);
+	}
+	try {
+		$("#About .students-reviews .owl-carousel").owlCarousel({
+			rewind: true,
+			autoplayHoverPause: true,
+			margin: 10,
+			responsiveClass: true,
+			nav: true,
+			autoplay: true,
+			autoplaySpeed: 500,
+			smartSpeed: 500,
+			dots: false,
+			dotsEach: false,
+			responsive: {
+				0: {
+					items: 1,
+				},
+				600: {
+					items: 2,
+				},
+				1000: {
+					items: 3,
+				},
+			},
+		});
+	} catch (e) {
+		console.log(e.message);
+	}
+
 });
