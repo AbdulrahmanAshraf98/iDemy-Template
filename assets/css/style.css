@@ -3587,8 +3587,84 @@ section.all-details .all-details-tabs .nav .nav-item .nav-link.active, .nav-item
     #PageNotFound .error .error-desc .btn-customize{
         width: 45%;
     }  
-    
+
 }
 /*---------------------------- */
 /*   PageNotFound page end    */
+/* ------------------------   */
+
+
+/*---------------------------- */
+/*    Contact page start */
+/* ------------------------   */
+#Contact .navbar{
+    background-color: var(--white);
+    box-shadow:var(--box-shadow);
+    position:sticky !important;
+
+}
+#Contact .navbar.scrolled{
+    position: fixed !important; 
+}
+#Contact .header-title{
+    background-color: var(--section-color-grey);
+}
+#Contact  .contect-details{
+    padding: 80px 0;
+}
+#Contact .contact-list-item {
+    gap: 3%;
+    margin-bottom: 0.5rem;
+}
+#Contact .contact-list-item  .icon{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(3, 185, 124,0.12) !important;
+    color: var(--main-color);
+    border-radius: var(--border-radius-circle);
+    padding: 1.5rem;
+    font-size:1.25rem;
+    -webkit-border-radius: var(--border-radius-circle);
+    -moz-border-radius: var(--border-radius-circle);
+    -ms-border-radius: var(--border-radius-circle);
+    -o-border-radius: var(--border-radius-circle);
+}
+#Contact .contact-list-item .info h4{
+    margin-bottom: 0.2rem;
+}
+#Contact .contact-list-item .info p{
+    line-height: 1.5;
+}
+#Contact .contact-form form{
+    padding: 0 15px;
+}
+
+
+#Contact .contact-form .form-group label{
+    font-size: 13px;
+    font-weight: 600;
+    opacity: 0.8;
+
+}
+#Contact .contact-form .form-group input{
+    height: 54px;
+    padding-left: 15px;
+    margin: 0 !important;
+    box-shadow: none !important;
+    background: #ffffff;
+    border: 1px solid #e6ebf5;
+    color: #707e9c;
+    border-radius: 4px;
+    font-weight: 400;
+
+    }
+#Contact .contact-form .btn-customize{
+    padding: 12px 25px;
+
+} 
+/*---------------------------- */
+/*    Contact page end */
 /* ------------------------   */
