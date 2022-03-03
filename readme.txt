@@ -56,5 +56,6 @@ icons fontawosame: name          classname
                  26-linkedin     <i class="fab fa-linkedin "></i>
                  27-twitter      <i class="fab fa-twitter-square"></i>
                  28-youtube      <i class="fab fa-youtube-square"></i>
-
-    
+                                 <i class="fas fa-angle-right"></i>
+                 30-like         <i class="fas fa-thumbs-up"></i>
+                 31-dislike      <i class="fas fa-thumbs-down"></i>

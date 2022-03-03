@@ -3556,3 +3556,38 @@ section.all-details .all-details-tabs .nav .nav-item .nav-link.active, .nav-item
 /*---------------------------- */
 /*      About page end       */
 /* ------------------------   */
+
+
+/*---------------------------- */
+/*    PageNotFound page start */
+/* ------------------------   */
+#PageNotFound .navbar{
+    background-color: var(--white);
+    box-shadow:var(--box-shadow);
+    position:sticky !important;
+
+}
+#PageNotFound .navbar.scrolled{
+    position: fixed !important; 
+}
+#PageNotFound .error{
+    padding: 80px 0;
+}
+#PageNotFound .error .error-desc{
+    text-align: center;
+}
+#PageNotFound .error .error-desc p{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+#PageNotFound .error .error-desc .btn-customize{
+    width: 30%;
+}
+@media(max-width: 576px){
+    #PageNotFound .error .error-desc .btn-customize{
+        width: 45%;
+    }  
+}
+/*---------------------------- */
+/*   PageNotFound page end    */
+/* ------------------------   */
