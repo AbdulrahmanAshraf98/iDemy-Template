@@ -1836,37 +1836,64 @@ footer  .footer-end p{
     align-items: center;
 }
 
-.login-form .form-group.row{
+.sign-form .form-group.row{
     margin: 0 0 1rem;
 
 
 }
-.login-form .from-group-item{
+.sign-form .from-group-item{
     display: flex;
     padding: 0 ;
     gap: 10%;
     align-items: baseline;
  }
-.login-form .form-check-input{
+ .sign-form label{
+    font-size: 13px;
+    font-weight: 600;
+    opacity: 0.8;
+    color: #3c4852;
+    font-family: var(--font-family-Mulish);
+ }
+ 
+ .sign-form .form-control{
+    height: 54px;
+    padding-left: 15px;
+    margin: 0 !important;
+    box-shadow: none !important;
+    background: #ffffff;
+    border: 1px solid #e6ebf5;
+    color: #707e9c;
+    border-radius: 4px;
+    font-family: var(--font-family-Mulish);
+ }
+ .modal-body .sign-form .form-control{
+    height: unset;
+ }
+.sign-form .form-check-input{
     position: static;
     margin: 0;
 }
-.login-form .form-submit{
+.sign-form .form-submit{
     width: 100%;
 }
-.login-form .social .title{
+.sign-form .social .title{
     width: 100%;
     text-align: center;
     font-size: 1rem;
-    margin-bottom: 1rem;
-}
-.login-form .social-icon{
+    color: #535c75;
+    padding: 1rem 0.5rem 2rem;
     margin: 0;
 }
-.login-form .social-icon li{
+.sign-form .social-icon{
+    margin: 0px -15px 2rem;
+}
+.modal-body .sign-form .social-icon{
+    margin: 0;
+}
+.sign-form .social-icon li{
     padding: 0;
 }
-.login-form .social-icon li a{
+.sign-form .social-icon li a{
     width: 90%;
     height: 50px;
     margin: 0 auto;
@@ -1881,35 +1908,46 @@ footer  .footer-end p{
     color: #535c75;
     background: #f7f8f9;
 }
-.login-form .social-icon .social-item .fa-facebook-square{
+.sign-form .social-icon .social-item a i{
+    font-size: 18px;
+}
+.sign-form .social-icon .social-item .fa-facebook-f{
     color:#2196f3;
 }
-.login-form .social-item .fa-linkedin {
+.sign-form .social-item .fa-linkedin-in{
     color:#00325c;
 }
-.login-form .social-item .fa-twitter-square {
+.sign-form .social-item .fa-twitter{
     color:#03b97c;
 }
-.login-in-footer{
+.sign-footer{
     display: flex;
     align-items: baseline;
-    justify-content: center;
+    justify-content: space-between;
     border-top: 1px solid #dee2e6;
     border-bottom-right-radius: calc(0.3rem - 1px);
     border-bottom-left-radius: calc(0.3rem - 1px);
+
 }
-.login-in-footer .signup{
+.sign-footer div:first-child{
     padding: 0;
 }
-.login-in-footer .forget-password{
+.sign-footer div:first-child p{
+    margin: 0;
+}
+.sign-footer div:first-child p a{
+    color:var(--main-color);
+}
+.sign-footer .forget-password{
+    flex: 1;
     text-align: right;
 }
 
 @media (max-width:576px){
-    .login-in-footer .signup{
+    .sign-footer .signup{
         font-size: .8rem;
     }
-    .login-in-footer .forget-password
+    .sign-footer .forget-password
     {
         font-size: .8rem;
     }
@@ -2237,14 +2275,14 @@ section.instructor-details .instructor-detail .instructor-info .instructor-ratin
 }
 
 
-.widget .form-check{
+ .form-check{
     margin-bottom: .5rem;
 }
-.widget input[type="checkbox" i]{
+ input[type="checkbox" i]{
     opacity: 0;
 }
 
-.widget .form-check-label{
+.form-check-label{
     position: relative;
     display: flex;
     gap:3%;
@@ -2254,7 +2292,10 @@ section.instructor-details .instructor-detail .instructor-info .instructor-ratin
     opacity:0.8;
 
 }
-.widget .form-check-label span{
+.sign-form .form-check-label{
+    margin-left: -27px;
+}
+ .form-check-label span{
     margin-left: auto;
     width: 20px;
     height: 20px;
@@ -2271,7 +2312,7 @@ section.instructor-details .instructor-detail .instructor-info .instructor-ratin
     -ms-border-radius:var(--border-radius-circle);
     -o-border-radius:var(--border-radius-circle);
 }
-.widget .form-check-label:before{
+ .form-check-label:before{
     content: "";
     display: inline-block;
     width:20px;
@@ -2285,14 +2326,15 @@ section.instructor-details .instructor-detail .instructor-info .instructor-ratin
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
-
-.widget input[type="checkbox" i]:checked~.form-check-label::before{
+.sign-form .form-check-label:before{
+    margin-right: 5px;
+}
+ input[type="checkbox" i]:checked~.form-check-label::before,.form-check-label.active::before{
     background: rgba(5, 175, 120,0.1);
     border-radius: 2px;
     border: none;
-
 }
-.widget input[type="checkbox" i]:checked~.form-check-label:after{
+ input[type="checkbox" i]:checked~.form-check-label:after,.form-check-label.active::after{
     content: "\f00c";
     font-weight: 900;
     font-family: "Font Awesome 5 Free";
@@ -3667,4 +3709,143 @@ section.all-details .all-details-tabs .nav .nav-item .nav-link.active, .nav-item
 } 
 /*---------------------------- */
 /*    Contact page end */
+/* ------------------------   */
+
+
+
+
+/*---------------------------- */
+/*    Sign-in page start */
+/* ------------------------   */
+
+#Sign-in .navbar{
+    background-color: var(--white);
+    box-shadow:var(--box-shadow);
+    position:sticky !important;
+
+}
+#Sign-in .navbar.scrolled{
+    position: fixed !important; 
+}
+
+.Sign{
+    padding: 80px 0;
+}
+
+.Sign .sign-form{
+    width: 100%;
+    border: 1px solid #eff2f5;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background: #ffffff;
+}
+.Sign .sign-form .sign-header{
+    height: 200px;
+    margin-bottom: 2rem;
+}
+.Sign .sign-form .sign-header>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.Sign .sign-title {
+    margin-top: -80px;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    margin-bottom: 1.5rem;
+}
+.Sign .sign-title .icon{
+    background-color: var(--white);
+    width: 90px;
+    height: 90px;   
+    box-shadow: var(--box-shadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius:var(--border-radius-circle);
+    -moz-border-radius:var(--border-radius-circle);
+    -ms-border-radius:var(--border-radius-circle);
+    -o-border-radius:var(--border-radius-circle);
+    border-radius:var(--border-radius-circle);
+    color:var(--main-color);
+    font-size:40px;
+}
+.Sign .sign-title h4{
+    line-height: 26px;
+    font-size: 21px;
+    color: #333d46;
+    font-weight: 600;
+}
+.Sign .sign-form form{
+    padding: 0 2rem;
+    width: 100%;
+}
+
+.sign-form .sign-footer{
+    padding: 1rem;
+}
+.Sign .sign-form .social-icon li{
+    padding: 0 1rem;
+}
+@media (max-width:576px) {
+    .Sign .sign-form form{
+        padding: 0 1rem;
+    }
+    .Sign .sign-form .social-icon li{
+        padding: 0;
+    } 
+    .sign-form .social-icon li a{
+        gap: 5%;
+        font-size: 14px;
+
+    }
+    .sign-form .social-icon li i{
+        font-size: 16px;
+
+    }
+    .sign-footer div:first-child p{
+        font-size: .8rem;
+    }
+}
+
+/*---------------------------- */
+/*    Sign-in page end */
+/* ------------------------   */
+
+/*---------------------------- */
+/*    Sign-Up page start */
+/* ------------------------   */
+#Sign-Up .navbar{
+    background-color: var(--white);
+    box-shadow:var(--box-shadow);
+    position:sticky !important;
+
+}
+#Sign-Up .navbar.scrolled{
+    position: fixed !important; 
+}
+
+/*---------------------------- */
+/*    Sign-Up page end */
+/* ------------------------   */
+
+/*---------------------------- */
+/*    Forget-Password page start */
+/* ------------------------   */
+
+#Forget-Password .navbar{
+    background-color: var(--white);
+    box-shadow:var(--box-shadow);
+    position:sticky !important;
+
+}
+#Forget-Password .navbar.scrolled{
+    position: fixed !important; 
+}/*---------------------------- */
+/*    Forget-Password page end */
 /* ------------------------   */
