@@ -3818,7 +3818,7 @@ section.all-details .all-details-tabs .nav .nav-item .nav-link.active, .nav-item
 }
 @media (max-width: 320px) {
     .sign-form .sign-footer{
-        padding: 0;
+        padding: 1rem 0;
     }
     .sign-footer div:first-child p{
         font-size: .68rem;
