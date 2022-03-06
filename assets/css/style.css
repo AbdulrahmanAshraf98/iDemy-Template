@@ -3812,7 +3812,7 @@ section.all-details .all-details-tabs .nav .nav-item .nav-link.active, .nav-item
         font-size: .8rem;
     }
 }
-@media (max-width: 576px) {
+@media (max-width: 320px) {
     .sign-form .sign-footer{
         padding: 0;
     }
