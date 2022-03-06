@@ -1922,7 +1922,7 @@ footer  .footer-end p{
 }
 .sign-footer{
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
     border-top: 1px solid #dee2e6;
     border-bottom-right-radius: calc(0.3rem - 1px);
@@ -3809,12 +3809,19 @@ section.all-details .all-details-tabs .nav .nav-item .nav-link.active, .nav-item
 
     }
     .sign-footer div:first-child p{
-        font-size: .8rem;
+        font-size: .7rem;
+    }
+    .sign-footer .forget-password{
+        font-size: .7rem;
+
     }
 }
 @media (max-width: 320px) {
     .sign-form .sign-footer{
         padding: 0;
+    }
+    .sign-footer div:first-child p{
+        font-size: .68rem;
     }
     .sign-footer .forget-password{
         font-size: .68rem;
