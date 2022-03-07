@@ -54,12 +54,13 @@ $(document).ready(function () {
 
 	//  Navbar function to add class scrolled to make navbar fixed  in big screen only
 	const screenWidth = $(window).width(); //get screen size
-	if (screenWidth >= 1024) {
-		$(window).scroll(function () {
+	$(window).scroll(function () {
+		if (screenWidth >= 1024) {
 			$(".navbar").toggleClass("scrolled", $(this).scrollTop() > 50);
-			$(".btn-scroll-to-top").toggleClass("active", $(this).scrollTop() > 20);
-		});
-	}
+		}
+		$(".btn-scroll-to-top").toggleClass("active", $(this).scrollTop() > 20);
+	});
+	
 	$(".btn-scroll-to-top").on("click", function () {
 		$("html").animate({ scrollTop: 0 }, 500);
 	});
