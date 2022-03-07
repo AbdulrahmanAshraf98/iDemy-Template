@@ -117,5 +117,28 @@ $(document).ready(function () {
 	} catch (e) {
 		console.log(e.message);
 	}
-
+	
+	$("#Courses-grid-style-page .view-style .list-view").click(function () {
+		$(this).parent().children().removeClass("active");
+		$(this).addClass("active");
+		if (screenWidth > 576) {
+			$(".courses")
+				.addClass("list")
+				.find(".course-items ")
+				.addClass("col-md-12")
+				.removeClass("col-md-6");
+		}
+	});
+	$("#Courses-grid-style-page .view-style .grid-view").click(function () {
+		$(this).parent().children().removeClass("active");
+		$(this).addClass("active");
+		if (screenWidth > 576) {
+			$(".courses")
+				.removeClass("list")
+				.find(".course-items ")
+				.addClass("col-md-6")
+				.removeClass("col-md-12 ");
+		}
+	});
+	new WOW().init();
 });
