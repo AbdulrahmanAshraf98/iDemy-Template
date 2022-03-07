@@ -1,4 +1,5 @@
 $(document).ready(function () {
+	new WOW().init();
 	// Navbar start
 	// Navbar navbar-button to open navbar menu  in tablet and mobile screen
 	$(".navbar-toggler").on("click", function () {
@@ -60,7 +61,7 @@ $(document).ready(function () {
 		}
 		$(".btn-scroll-to-top").toggleClass("active", $(this).scrollTop() > 20);
 	});
-	
+
 	$(".btn-scroll-to-top").on("click", function () {
 		$("html").animate({ scrollTop: 0 }, 500);
 	});
@@ -118,7 +119,7 @@ $(document).ready(function () {
 	} catch (e) {
 		console.log(e.message);
 	}
-	
+
 	$("#Courses-grid-style-page .view-style .list-view").click(function () {
 		$(this).parent().children().removeClass("active");
 		$(this).addClass("active");
@@ -141,5 +142,5 @@ $(document).ready(function () {
 				.removeClass("col-md-12 ");
 		}
 	});
-	new WOW().init();
+	
 });
