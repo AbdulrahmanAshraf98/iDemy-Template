@@ -1,5 +1,4 @@
 $(document).ready(function () {
-	new WOW().init();
 	// Navbar start
 	// Navbar navbar-button to open navbar menu  in tablet and mobile screen
 	$(".navbar-toggler").on("click", function () {
@@ -142,5 +141,4 @@ $(document).ready(function () {
 				.removeClass("col-md-12 ");
 		}
 	});
-	
 });
