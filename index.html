@@ -16,10 +16,7 @@
     <script src="assets/js/external/bootstrap.bundle.min.js" defer ></script>
     <script src="assets/js/external/owl.carousel.min.js" defer></script>
     <script src="assets/js/app.js"defer ></script>
-    <script src="assets/js/external/wow.js" sync></script>
-    <script  >
-      new WOW().init();
-    </script>
+    
     <title>idemy</title>
 </head>
 <body id="Homepage" >
@@ -1370,6 +1367,20 @@
     <!---------------  ------------------------->
     <!-----------SignIn Modal end  -------------->
     <!----------------  ----------------------->
+
+    <script src="assets/js/external/wow.js"></script>
+    <script  >
+                            wow = new WOW(
+                      {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animated', // default
+                      offset:       0,          // default
+                      mobile:       true,       // default
+                      live:         true        // default
+                    }
+                    )
+                    wow.init();
+    </script>
 
 </body>
 </html>
