@@ -50,13 +50,12 @@
     margin: 0;
     box-sizing: border-box;
 }
-.container{
-    max-width: 90% ;
-
+@media (min-width:1500px){
+    .container{
+        max-width: 90%;
+    }
 }
-
-
-@media (max-width:1440px)
+@media (min-width:1100px) and (max-width:1499px)
 {
     .container{
         max-width:1200px;
@@ -1005,12 +1004,22 @@ section.find .sidebar .filiter-type .widget {
     @media (max-width:576px){
         header .header-content h1{
             margin-bottom: 1rem;
+            
         }
         header .header-content p{
             font-size: 0.9rem;
         }
         header .header-content .input-group{
             width: 95%;
+        }
+        
+    }
+    @media (max-width:320px){
+        header .header-content h1{
+            font-size: 1.5rem;
+        } 
+        header .header-info h4{
+            font-size: 1.2rem;
         }
     }
 /*---------------------------- */
