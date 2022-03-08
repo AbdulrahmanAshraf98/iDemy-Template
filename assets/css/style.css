@@ -1628,7 +1628,7 @@ section.find .sidebar .filiter-type .widget {
     -moz-border-radius:var(--border-radius-normal) ;
     -ms-border-radius:var(--border-radius-normal) ;
     -o-border-radius:var(--border-radius-normal) ;
-    outline:5px solid rgb(255 255 255 / 20%);
+    box-shadow: 0px 0px 0px 5px rgb(255 255 255 / 20%);
     color: var(--text-color-a);
     font-weight: 600;
 }
