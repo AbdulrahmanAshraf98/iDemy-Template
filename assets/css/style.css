@@ -2691,7 +2691,7 @@ section.all-details .all-details-tabs .nav{
     gap:2%;
 }
 section.all-details  .all-details-tabs .nav .nav-item{
-    flex: 1;
+    
     text-align: center;
 }
 section.all-details .all-details-tabs .nav  .nav-item  .nav-link{
@@ -3196,6 +3196,7 @@ section.all-details .all-details-tabs .nav .nav-item .nav-link.active, .nav-item
     section.all-details .all-details-tabs .nav .nav-item{
         margin-bottom: 1rem;
         border-bottom: 0;
+        flex:1;
     }
     .wraper p{
         font-size: 14px;
