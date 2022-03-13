@@ -50,6 +50,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    overflow-x: hidden;
+}
 @media (min-width:1500px){
     .container{
         max-width: 90%;
