@@ -2427,6 +2427,7 @@ section.instructor-details .instructor-detail .instructor-info .instructor-ratin
     -moz-transition:all  0.4s ease;
     -ms-transition:all  0.4s ease;
     -o-transition:all  0.4s ease;
+    cursor:pointer;
 }
 .view-style div.active{
     color:var(--main-color);
@@ -3775,6 +3776,9 @@ section.all-details .all-details-tabs .nav .nav-item .nav-link.active, .nav-item
     padding: 12px 25px;
 
 } 
+/* #Contact .contact-map{
+    min-height:180px;
+} */
 /*---------------------------- */
 /*    Contact page end */
 /* ------------------------   */
