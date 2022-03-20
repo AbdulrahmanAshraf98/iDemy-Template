@@ -906,6 +906,7 @@ section.find .sidebar .filiter-type .widget {
 header {
 	padding: var(--section-padding-type-3);
 	background-color: var(--section-color-grey);
+    overflow: hidden;
 }
 header .container .row {
 	align-items: center;
@@ -1230,6 +1231,9 @@ header .header-info h4 {
 /*---------------------------- */
 /*     Work process start      */
 /* ------------------------   */
+.work{
+    overflow: hidden;
+}
 .work .row {
 	align-items: center;
 	justify-content: space-between;
