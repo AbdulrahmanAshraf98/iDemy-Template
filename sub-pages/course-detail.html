@@ -1,828 +1,1196 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Mulish:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/external/all.min.css">
-    <link rel="stylesheet" href="../assets/css/external/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <script src="../assets/js/external/jquery-3.6.0.min.js" defer></script>
-    <script src="../assets/js/external/bootstrap.bundle.min.js" defer ></script>
-    <script src="../assets/js/app.js"defer ></script>
-    <title>Course-detail</title>
-</head>
-<body id="Course-detail">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Mulish:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../assets/css/external/all.min.css" />
+		<link rel="stylesheet" href="../assets/css/external/bootstrap.min.css" />
+		<link rel="stylesheet" href="../assets/css/style.css" />
+		<script src="../assets/js/external/jquery-3.6.0.min.js" defer></script>
+		<script src="../assets/js/external/bootstrap.bundle.min.js" defer></script>
+		<script src="../assets/js/app.js" defer></script>
+		<title>Course-detail</title>
+	</head>
+	<body id="Course-detail">
+			<!---------------  ----------------------->
+		<!---------------Navbar start ------------------>
+		<!----------------  ----------------------->
+		<nav class="navbar navbar-expand-lg">
+			<div class="container">
+				<a class="navbar-brand" href="#"
+					><img
+						class="img-fluid"
+						src="assets/img/logo/logo.png"
+						alt=""
+						srcset=""
+				/></a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<i class="fas fa-bars"></i>
+				</button>
 
-        <!---------------  ----------------------->
-    <!---------------Navbar start ------------------>
-    <!----------------  ----------------------->
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-          <a class="navbar-brand" href="#"><img class="img-fluid" src="../assets/img/logo/logo.png" alt="" srcset=""></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
-          </button>
-        
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        
-            <ul class="navbar-nav mr-auto">
-              <a class="nav-item close-menu d-lg-none d-block">
-                <i class="fas fa-times"></i>
-              </a>
-              <li class="nav-item active dropdown">
-                  <a class="nav-link  dropdown" id="navbarDropdown" role="dropdown" aria-expanded="false">
-                    <span>Home</span> <i class="fas fa-angle-down open-menu"></i>
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li class="dropdown-item" ><a href="../index.html">Home 1</a><li/>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown" href="#" id="navbarDropdown" role="dropdown" aria-expanded="false">
-                    Courses
-                    <i class="fas fa-angle-down open-menu"></i>
-                  </a>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<a class="nav-item close-menu d-lg-none d-block">
+							<i class="fas fa-times"></i>
+						</a>
+						<li class="nav-item active dropdown">
+							<a
+								class="nav-link dropdown"
+								href="#"
+								id="navbarDropdown"
+								role="dropdown"
+								aria-expanded="false"
+							>
+								<span>Home</span> <i class="fas fa-angle-down open-menu"></i>
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li class="dropdown-item" >
+									<a href="../index.html">Home 1</a>
+								</li>
+								<li />
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown"
+								href="#"
+								id="navbarDropdown"
+								role="dropdown"
+								aria-expanded="false"
+							>
+								Courses
+								<i class="fas fa-angle-down open-menu"></i>
+							</a>
 
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      
-                    <li class="dropdown-item" ><a href="#">Search Courses in Grid
-                      <i class="fas fa-angle-right open-sub-menu"></i>
-                    </a>
-                      <ul class="dropdown-menu sub-menu" aria-labelledby="navbarDropdown">
-                          <li class="dropdown-item" ><a href="./Courses-Grid-Style.html">Grid Layout Style 1</a></li>
-                        </ul>
-                      </li>
-                      <li class="dropdown-item" ><a href="#">Search Courses in List
-                          <i class="fas fa-angle-right open-sub-menu"></i>
-                      </a>
-                          <ul class="dropdown-menu sub-menu" aria-labelledby="navbarDropdown">
-                              <li class="dropdown-item" ><a href="#">List Layout Style 1
-                              </a></li>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li class="dropdown-item">
+									<a href="#"
+										>Search Courses
+										<i class="fas fa-angle-right open-sub-menu"></i>
+									</a>
+									<ul
+										class="dropdown-menu sub-menu"
+										aria-labelledby="navbarDropdown"
+									>
+										<li class="dropdown-item">
+											<a href="./Courses-Grid-Style.html">Style 1</a>
+										</li>
+									</ul>
+								</li>
+								<li class="dropdown-item">
+									<a href="#"
+										>Courses Details
+										<i class="fas fa-angle-right open-sub-menu"></i>
+									</a>
+									<ul
+										class="dropdown-menu sub-menu"
+										aria-labelledby="navbarDropdown"
+									>
+										<li class="dropdown-item">
+											<a href="./course-detail.html">Courses Details 1</a>
+										</li>
+									</ul>
+								</li>
+								<li class="dropdown-item">
+									<a href="./explore-category.html">Explore Category</a>
+								</li>
+								<li class="dropdown-item">
+									<a href="./find-instructor.html">Find Instructor</a>
+								</li>
+								<li class="dropdown-item">
+									<a href="./instructor-detail.html">Instructor Details</a>
+								</li>
+							</ul>
+						</li>
 
-                            </ul>
-                      </li>
-                      <li class="dropdown-item"><a href="#">Courses Details
-                          <i class="fas fa-angle-right open-sub-menu"></i>
-                      </a>
-                          <ul class="dropdown-menu sub-menu" aria-labelledby="navbarDropdown">
-                              <li class="dropdown-item" ><a href="#">Courses Details 1</a></li>
-                            </ul>
-                      </li>
-                      <li class="dropdown-item"><a href="./explore-category.html">Explore Category</a>
-                      </li>
-                      <li class="dropdown-item" ><a href="./find-instructor.html">Find Instructor</a>
-                      </li>
-                      <li class="dropdown-item" ><a href="./instructor-detail.html">Instructor Details</a>
-                      </li>
-                  </ul>
-                </li>
-                
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown" href="#" id="navbarDropdown" role="dropdown" aria-expanded="false">
-                    Pages
-                    <i class="fas fa-angle-down open-menu"></i>
-                  </a>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown"
+								href="#"
+								id="navbarDropdown"
+								role="dropdown"
+								aria-expanded="false"
+							>
+								Pages
+								<i class="fas fa-angle-down open-menu"></i>
+							</a>
 
-                  <ul class="dropdown-menu s" aria-labelledby="navbarDropdown">
-                      
-                    <li class="dropdown-item " ><a href="#">Shop Pages
-                      <i class="fas fa-angle-right open-sub-menu"></i>
-                    </a>
-                      <ul class="dropdown-menu sub-menu" aria-labelledby="navbarDropdown">
-                          <li class="dropdown-item" ><a href="#">Grid Layout Style 1</a></li>
-                          <li class="dropdown-item" ><a href="#">Grid Layout Style 1</a></li>
-                          <li class="dropdown-item" ><a href="#">Grid Layout Style 1</a></li>
-                          <li class="dropdown-item" ><a href="#">Grid Layout Style 1</a></li>
-                          <li class="dropdown-item" ><a href="#">Grid Layout Style 1</a></li>
-                          <li class="dropdown-item" ><a href="#">Grid Layout Style 1</a></li>
-                        </ul>
-                      </li>
-                      <li class="dropdown-item" ><a href="./about.html">About
-                      </a>
-                      </li>
-                      <li class="dropdown-item" ><a href="./blog.html">Blog
-                      </a>
-                      </li>
-                      <li class="dropdown-item" ><a href="./contact.html">Contact
-                      </a>
-                      </li>
-                      <li class="dropdown-item"><a href="./SignIn.html">Login
-                      </a>
-                      </li>
-                      <li class="dropdown-item"><a href="./sign-up.html">SignUp</a>
-                      </li>
-                      <li class="dropdown-item" ><a href="./forget-password.html">ForgetPassword</a>
-                      </li>
-                      <li class="dropdown-item" ><a href="./pagenotfound.html">PageNotFound</a>
-                      </li>
-                  
-                  </ul>
-                </li>
+							<ul class="dropdown-menu s" aria-labelledby="navbarDropdown">
+								<li class="dropdown-item">
+									<a href="./about.html">About </a>
+								</li>
+								<li class="dropdown-item">
+									<a href="./blog.html">Blog </a>
+								</li>
+								<li class="dropdown-item">
+									<a href="./contact.html">Contact </a>
+								</li>
+								<li class="dropdown-item">
+									<a href="./SignIn.html">Login </a>
+								</li>
+								<li class="dropdown-item">
+									<a href="./sign-up.html">SignUp</a>
+								</li>
+								<li class="dropdown-item">
+									<a href="./forget-password.html">ForgetPassword</a>
+								</li>
+								<li class="dropdown-item">
+									<a href="./pagenotfound.html">PageNotFound</a>
+								</li>
+							</ul>
+						</li>
 
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Dashboard</a>
-                </li>
-            </ul>
-            <div class="overlay d-lg-none d-block"></div>
-       </div>
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-customize-md " data-toggle="modal" data-target="#SignIn">
-              <i class="fas fa-sign-in-alt"></i> SignIn
-            </button>
-            
+						<li class="nav-item">
+							<a class="nav-link" href="#">Dashboard</a>
+						</li>
+					</ul>
+					<div class="overlay d-lg-none d-block"></div>
+				</div>
+				<!-- Button trigger modal -->
+				<button
+					type="button"
+					class="btn btn-customize-md"
+					data-toggle="modal"
+					data-target="#SignIn"
+				>
+					<i class="fas fa-sign-in-alt"></i> SignIn
+				</button>
 
-              <button class="btn d-lg-block d-none btn-customize" type="button" >
-                 Get started
-              </button>
-      </div>
-    </nav>
+				<button class="btn d-lg-block d-none btn-customize" type="button">
+					Get started
+				</button>
+			</div>
+		</nav>
 
-    <!---------------  ----------------------->
-    <!---------------Navbar end  ------------------>
-    <!----------------  ----------------------->
+		<!---------------  ----------------------->
+		<!---------------Navbar end  ------------------>
+		<!----------------  ----------------------->
 
+		<!---------------  ------------------------->
+		<!--------- about-course start ------------->
+		<!----------------  ----------------------->
+		<section class="about-course">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7">
+						<din class="course-info">
+							<div class="course-specialize d-flex">
+								<div class="b-c-Cyan">
+									<p>Web</p>
+								</div>
+								<div class="b-c-pink">
+									<p>Ruby</p>
+								</div>
+							</div>
+							<div class="course-name">
+								<h2>Ruby on Rails Program</h2>
+							</div>
+							<div class="cources-details">
+								<ul class="row">
+									<li><i class="fas fa-calendar"></i>10 - 20 weeks</li>
+									<li><i class="fas fa-forward"></i>102 Lectures</li>
+									<li><i class="fa fa-user"></i>502 Student Enrolled</li>
+								</ul>
+							</div>
+							<div class="course-short-desc">
+								<p>
+									Python for Data Science and Machine Learning Bootcamp Learn
+									how to use NumPy, Pandas, Seaborn , Matplotlib , Plotly ,
+									Scikit-Learn , Machine Learning, Tensorflow , and more!
+								</p>
+							</div>
+							<div class="course-rating d-flex">
+								<div class="star-rating">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+								<div class="review-count">
+									<span>4</span>
+									3572 Reviews
+								</div>
+							</div>
+						</din>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!---------------  ------------------------->
+		<!--------- about-course start ------------->
+		<!----------------  ----------------------->
 
-    <!---------------  ------------------------->
-    <!--------- about-course start ------------->
-    <!----------------  ----------------------->
-      <section class="about-course">
-          <div class="container">
-              <div class="row">
-                  <div class="col-lg-7">
-                    <din class="course-info">
-                        <div class="course-specialize d-flex">
-                          <div class="b-c-Cyan">
-                            <p>Web</p>
-                          </div>
-                          <div class="b-c-pink">
-                            <p>Ruby</p>
-                          </div>
-                        </div>
-                        <div class="course-name">
-                          <h2>Ruby on Rails Program</h2>
-                        </div>
-                        <div class="cources-details">
-                          <ul class="row "> 
-                            <li><i class="fas fa-calendar"></i>10 - 20 weeks</li>
-                            <li><i class="fas fa-forward"></i></i>102 Lectures</li>
-                            <li><i class="fa fa-user"></i></i>502 Student Enrolled</li>
-                           </ul>
-                        </div>
-                        <div class="course-short-desc">
-                            <p>
-                            Python for Data Science and Machine Learning Bootcamp
-                            Learn how to use NumPy, Pandas, Seaborn , Matplotlib , Plotly , Scikit-Learn , Machine Learning, Tensorflow , and more!</p>
-                        </div>
-                        <div class="course-rating d-flex">
-                          <div class="star-rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                          </div>
-                          <div class="review-count">
-                            <span>4</span>
-                            3572 Reviews
-                          </div>
-                        </div>
-                    </din>
-                  </div>
-              </div>
-          </div>
-      </section>
-    <!---------------  ------------------------->
-    <!--------- about-course start ------------->
-    <!----------------  ----------------------->
+		<section class="all-details">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-12 all-details-tabs">
+						<ul class="nav nav-pills mb-5" id="pills-tab" role="tablist">
+							<li class="nav-item" role="presentation">
+								<a
+									class="nav-link active"
+									id="Overview-tab"
+									data-toggle="pill"
+									href="#Overview"
+									role="tab"
+									aria-controls="Overview"
+									aria-selected="true"
+									>Overview</a
+								>
+							</li>
+							<li class="nav-item" role="presentation">
+								<a
+									class="nav-link"
+									id="pills-Circullum-tab"
+									data-toggle="pill"
+									href="#pills-Circullum"
+									role="tab"
+									aria-controls="pills-Circullum"
+									aria-selected="false"
+									>Curriculum</a
+								>
+							</li>
+							<li class="nav-item" role="presentation">
+								<a
+									class="nav-link"
+									id="pills-Instructor-tab"
+									data-toggle="pill"
+									href="#pills-Instructor"
+									role="tab"
+									aria-controls="pills-Instructor"
+									aria-selected="false"
+									>Instructor</a
+								>
+							</li>
+							<li class="nav-item" role="presentation">
+								<a
+									class="nav-link"
+									id="pills-Review-tab"
+									data-toggle="pill"
+									href="#pills-Review"
+									role="tab"
+									aria-controls="pills-Review"
+									aria-selected="false"
+									>Reviews</a
+								>
+							</li>
+						</ul>
+						<div class="tab-content" id="pills-tabContent">
+							<div
+								class="tab-pane overview fade show active"
+								id="Overview"
+								role="tabpanel"
+								aria-labelledby="pills-Overview-tab"
+							>
+								<div class="wraper course-overview">
+									<h5>Course Overview</h5>
+									<p>
+										At vero eos et accusamus et iusto odio dignissimos ducimus
+										qui blanditiis praesentium voluptatum deleniti atque
+										corrupti quos dolores et quas molestias excepturi sint
+										occaecati cupiditate non provident, similique sunt in culpa
+										qui officia deserunt mollitia animi, id est laborum et
+										dolorum fuga. Et harum quidem rerum facilis est et expedita
+										distinctio.
+									</p>
+									<p>
+										Aperiam, eaque ipsa quae ab illo inventore veritatis et
+										quasi architecto. Sam voluptatem quia voluptas sit
+										aspernatur aut odit aut fugit, sed quia consequuntur magni
+										dolores eos qui ratione voluptatem sequi nesciunt.
+									</p>
+									<h6>Requirements</h6>
+									<ul>
+										<li>
+											<i class="fas fa-forward"></i>At vero eos et accusamus et
+											iusto odio dignissimos ducimus
+										</li>
+										<li>
+											<i class="fas fa-forward"></i>At vero eos et accusamus et
+											iusto odio dignissimos ducimus
+										</li>
+										<li>
+											<i class="fas fa-forward"></i>At vero eos et accusamus et
+											iusto odio dignissimos ducimus
+										</li>
+										<li>
+											<i class="fas fa-forward"></i>At vero eos et accusamus et
+											iusto odio dignissimos ducimus
+										</li>
+										<li>
+											<i class="fas fa-forward"></i>At vero eos et accusamus et
+											iusto odio dignissimos ducimus
+										</li>
+									</ul>
+								</div>
+								<div class="wraper certification">
+									<h5>Certification</h5>
+									<p>
+										At vero eos et accusamus et iusto odio dignissimos ducimus
+										qui blanditiis praesentium voluptatum deleniti atque
+										corrupti quos dolores et quas molestias excepturi sint
+										occaecati cupiditate non provident, similique sunt in culpa
+										qui officia deserunt mollitia animi, id est laborum et
+										dolorum fuga. Et harum quidem rerum facilis est et expedita
+										distinctio.
+									</p>
+									<p>
+										Aperiam, eaque ipsa quae ab illo inventore veritatis et
+										quasi architecto. Sam voluptatem quia voluptas sit
+										aspernatur aut odit aut fugit, sed quia consequuntur magni
+										dolores eos qui ratione voluptatem sequi nesciunt.
+									</p>
+								</div>
+								<div class="wraper what-you-learn">
+									<h5>What you'll learn</h5>
+									<ul class="row m-0">
+										<li class="col-xl-4">
+											<i class="fas fa-check"></i>At vero eos et accusamus
+										</li>
+										<li class="col-xl-4">
+											<i class="fas fa-check"></i>At vero eos et accusamus
+										</li>
+										<li class="col-xl-4">
+											<i class="fas fa-check"></i>At vero eos et accusamus
+										</li>
+										<li class="col-xl-4">
+											<i class="fas fa-check"></i>At vero eos et accusamus
+										</li>
+										<li class="col-xl-4">
+											<i class="fas fa-check"></i>At vero eos et accusamus
+										</li>
+										<li class="col-xl-4">
+											<i class="fas fa-check"></i>At vero eos et accusamus
+										</li>
+										<li class="col-xl-4">
+											<i class="fas fa-check"></i>At vero eos et accusamus
+										</li>
+										<li class="col-xl-4">
+											<i class="fas fa-check"></i>At vero eos et accusamus
+										</li>
+										<li class="col-xl-4">
+											<i class="fas fa-check"></i>At vero eos et accusamus
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div
+								class="tab-pane circullum fade"
+								id="pills-Circullum"
+								role="tabpanel"
+								aria-labelledby="pills-Circullum-tab"
+							>
+								<div class="wraper">
+									<h5>Course Circullum</h5>
+									<div class="accordion" id="accordionExample">
+										<div class="card">
+											<div class="card-header" id="headingOne">
+												<a
+													class="btn collapsed"
+													data-toggle="collapse"
+													data-target="#chapter-1"
+													aria-expanded="true"
+												>
+													Part 01: How To Learn Web Designing Step by Step
+												</a>
+											</div>
+											<div class="content collapse show" id="chapter-1">
+												<ul class="lecture-list">
+													<li class="complete">
+														<i class="fas fa-check"></i>Startup Designing with
+														HTML5 & CSS3
+														<span class="lecture-timing">20:12</span>
+													</li>
+													<li class="progressing">
+														<i class="fa fa-play"></i>Startup Startup Web
+														Designing Beginner
+														<span class="lecture-timing">20:12</span>
+													</li>
 
-      <section class="all-details">
-          <div class="container">
-              <div class="row">
-                  <div class="col-lg-8 col-12 all-details-tabs">
-                    <ul class="nav nav-pills mb-5" id="pills-tab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                          <a class="nav-link active" id="Overview-tab" data-toggle="pill" href="#Overview" role="tab" aria-controls="Overview" aria-selected="true">Overview</a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <a class="nav-link" id="pills-Circullum-tab" data-toggle="pill" href="#pills-Circullum" role="tab" aria-controls="pills-Circullum" aria-selected="false">Curriculum</a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <a class="nav-link" id="pills-Instructor-tab" data-toggle="pill" href="#pills-Instructor" role="tab" aria-controls="pills-Instructor" aria-selected="false">Instructor</a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link" id="pills-Review-tab" data-toggle="pill" href="#pills-Review" role="tab" aria-controls="pills-Review" aria-selected="false">Reviews</a>
-                          </li>
-                      </ul>
-                      <div class="tab-content " id="pills-tabContent">
-                        <div class="tab-pane  overview fade  show active" id="Overview" role="tabpanel" aria-labelledby="pills-Overview-tab">
-                            <div class="wraper course-overview">
-                                <h5>Course Overview</h5>
-                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
-                                <p>Aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto. Sam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                                <h6>Requirements</h6>
-                                <ul>
-                                    <li ><i class="fas fa-forward"></i>At vero eos et accusamus et iusto odio dignissimos ducimus
-                                    </li>
-                                    <li ><i class="fas fa-forward"></i>At vero eos et accusamus et iusto odio dignissimos ducimus
-                                    </li>
-                                    <li ><i class="fas fa-forward"></i>At vero eos et accusamus et iusto odio dignissimos ducimus
-                                    </li>
-                                    <li ><i class="fas fa-forward"></i>At vero eos et accusamus et iusto odio dignissimos ducimus
-                                    </li>
-                                    <li ><i class="fas fa-forward"></i>At vero eos et accusamus et iusto odio dignissimos ducimus
-                                    </li>
+													<li class="unview">
+														<i class="fas fa-lock"></i>Startup Startup Web
+														Designing Beginner
+														<span class="lecture-timing">20:12</span>
+													</li>
 
-                                </ul>
-                            </div>
-                            <div class="wraper certification">
-                                <h5>Certification</h5>
-                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
-                                <p>Aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto. Sam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                            </div>
-                            <div class="wraper what-you-learn">
-                                <h5>What you'll learn</h5>
-                                <ul class="row m-0">
-                                    <li class="col-xl-4"><i class="fas fa-check"></i>At vero eos et accusamus</li>
-                                    <li class="col-xl-4"><i class="fas fa-check"></i>At vero eos et accusamus</li>
-                                    <li class="col-xl-4"><i class="fas fa-check"></i>At vero eos et accusamus</li>
-                                    <li class="col-xl-4"><i class="fas fa-check"></i>At vero eos et accusamus</li>
-                                    <li class="col-xl-4"><i class="fas fa-check"></i>At vero eos et accusamus</li>
-                                    <li class="col-xl-4"><i class="fas fa-check"></i>At vero eos et accusamus</li>
-                                    <li class="col-xl-4"><i class="fas fa-check"></i>At vero eos et accusamus</li>
-                                    <li class="col-xl-4"><i class="fas fa-check"></i>At vero eos et accusamus</li>
-                                    <li class="col-xl-4"><i class="fas fa-check"></i>At vero eos et accusamus</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="tab-pane circullum fade " id="pills-Circullum" role="tabpanel" aria-labelledby="pills-Circullum-tab">
-                            <div class="wraper">
-                                <h5>Course Circullum</h5>
-                                <div class="accordion" id="accordionExample">
-                                    <div class="card">
-                                        <div class="card-header" id="headingOne">
-                                            <a class="btn collapsed" data-toggle="collapse" data-target="#chapter-1" aria-expanded="true">
-                                                Part 01: How To Learn Web Designing Step by Step
-                                            </a>
-                                        </div>
-                                        <div class="content collapse show" id="chapter-1">
-                                            <ul class="lecture-list">
-                                              <li class="complete">
-                                                <i class="fas fa-check"></i>Startup Designing with HTML5 & CSS3
-                                                <span class="lecture-timing">20:12</span>
-                                              </li>
-                                              <li class="progressing">
-                                                <i class="fa fa-play"></i>Startup Startup Web Designing Beginner
-                                                <span class="lecture-timing">20:12</span> 
-                                              </li>
+													<li class="unview">
+														<i class="fas fa-lock"></i>Startup Startup Web
+														Designing Beginner
+														<span class="lecture-timing">20:12</span>
+													</li>
 
-                                              <li class="unview">
-                                                <i class="fas fa-lock"></i>Startup Startup Web Designing Beginner
-                                                <span class="lecture-timing">20:12</span> 
-                                              </li>
+													<li class="unview">
+														<i class="fas fa-lock"></i>Startup Startup Web
+														Designing Beginner
+														<span class="lecture-timing">20:12</span>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-header" id="headingTwo">
+												<a
+													class="btn collapsed"
+													data-toggle="collapse"
+													data-target="#chapter-2"
+													aria-expanded="false"
+												>
+													Part 02: How To Learn Web Designing Step by Step
+												</a>
+											</div>
+											<div class="content collapse" id="chapter-2">
+												<ul class="lecture-list">
+													<li class="unview">
+														<i class="fas fa-lock"></i>Startup Startup Web
+														Designing Beginner
+														<span class="lecture-timing">20:12</span>
+													</li>
 
-                                              <li class="unview">
-                                                <i class="fas fa-lock"></i>Startup Startup Web Designing Beginner
-                                                <span class="lecture-timing">20:12</span> 
-                                              </li>
+													<li class="unview">
+														<i class="fas fa-lock"></i>Startup Startup Web
+														Designing Beginner
+														<span class="lecture-timing">20:12</span>
+													</li>
 
-                                              <li class="unview">
-                                                <i class="fas fa-lock"></i>Startup Startup Web Designing Beginner
-                                                <span class="lecture-timing">20:12</span> 
-                                              </li>
-                                            </ul>
-                                        </div>
+													<li class="unview">
+														<i class="fas fa-lock"></i>Startup Startup Web
+														Designing Beginner
+														<span class="lecture-timing">20:12</span>
+													</li>
 
-                                    </div>
-                                    <div class="card">
-                                      <div class="card-header" id="headingTwo">
-                                          <a class="btn collapsed" data-toggle="collapse" data-target="#chapter-2" aria-expanded="false">
-                                              Part 02: How To Learn Web Designing Step by Step
-                                          </a>
-                                      </div>
-                                      <div class="content collapse " id="chapter-2">
-                                          <ul class="lecture-list">
-                                        
-                                            <li class="unview">
-                                              <i class="fas fa-lock"></i>Startup Startup Web Designing Beginner
-                                              <span class="lecture-timing">20:12</span> 
-                                            </li>
-                                           
-                                            <li class="unview">
-                                              <i class="fas fa-lock"></i>Startup Startup Web Designing Beginner
-                                              <span class="lecture-timing">20:12</span> 
-                                            </li>
+													<li class="unview">
+														<i class="fas fa-lock"></i>Startup Startup Web
+														Designing Beginner
+														<span class="lecture-timing">20:12</span>
+													</li>
 
-                                            <li class="unview">
-                                              <i class="fas fa-lock"></i>Startup Startup Web Designing Beginner
-                                              <span class="lecture-timing">20:12</span> 
-                                            </li>
+													<li class="unview">
+														<i class="fas fa-lock"></i>Startup Startup Web
+														Designing Beginner
+														<span class="lecture-timing">20:12</span>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-header" id="headingThree">
+												<a
+													class="btn collapsed"
+													data-toggle="collapse"
+													data-target="#chapter-3"
+													aria-expanded="false"
+												>
+													Part 03: How To Learn Web Designing Step by Step
+												</a>
+											</div>
+											<div class="content collapse" id="chapter-3">
+												<ul class="lecture-list">
+													<li class="unview">
+														<i class="fas fa-lock"></i>Startup Startup Web
+														Designing Beginner
+														<span class="lecture-timing">20:12</span>
+													</li>
 
-                                            <li class="unview">
-                                              <i class="fas fa-lock"></i>Startup Startup Web Designing Beginner
-                                              <span class="lecture-timing">20:12</span> 
-                                            </li>
+													<li class="unview">
+														<i class="fas fa-lock"></i>Startup Startup Web
+														Designing Beginner
+														<span class="lecture-timing">20:12</span>
+													</li>
 
-                                            <li class="unview">
-                                              <i class="fas fa-lock"></i>Startup Startup Web Designing Beginner
-                                              <span class="lecture-timing">20:12</span> 
-                                            </li>
-                                          </ul>
-                                      </div>
+													<li class="unview">
+														<i class="fas fa-lock"></i>Startup Startup Web
+														Designing Beginner
+														<span class="lecture-timing">20:12</span>
+													</li>
 
-                                    </div>
-                                    <div class="card">
-                                      <div class="card-header" id="headingThree">
-                                          <a class="btn collapsed" data-toggle="collapse" data-target="#chapter-3" aria-expanded="false">
-                                              Part 03: How To Learn Web Designing Step by Step
-                                          </a>
-                                      </div>
-                                      <div class="content collapse" id="chapter-3">
-                                          <ul class="lecture-list">
-                                         
-                                            <li class="unview">
-                                              <i class="fas fa-lock"></i>Startup Startup Web Designing Beginner
-                                              <span class="lecture-timing">20:12</span> 
-                                            </li>
-                                          
-                                            <li class="unview">
-                                              <i class="fas fa-lock"></i>Startup Startup Web Designing Beginner
-                                              <span class="lecture-timing">20:12</span> 
-                                            </li>
+													<li class="unview">
+														<i class="fas fa-lock"></i>Startup Startup Web
+														Designing Beginner
+														<span class="lecture-timing">20:12</span>
+													</li>
 
-                                            <li class="unview">
-                                              <i class="fas fa-lock"></i>Startup Startup Web Designing Beginner
-                                              <span class="lecture-timing">20:12</span> 
-                                            </li>
+													<li class="unview">
+														<i class="fas fa-lock"></i>Startup Startup Web
+														Designing Beginner
+														<span class="lecture-timing">20:12</span>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div
+								class="tab-pane instractor-tab fade"
+								id="pills-Instructor"
+								role="tabpanel"
+								aria-labelledby="pills-Instructor-tab"
+							>
+								<div class="wraper">
+									<div class="card">
+										<div class="row no-gutters">
+											<div class="col-md-4 col-12 img-box">
+												<img
+													src="../assets/img/avater/9mCNr06.jpg"
+													class="img-fluid"
+													alt="..."
+												/>
+											</div>
+											<div class="col-md-8 col-12">
+												<div class="card-body">
+													<h4 class="card-title">
+														<a href="">Luis Morenno</a>
+													</h4>
+													<div class="cources-details">
+														<ul class="row">
+															<li><i class="fas fa-calendar"></i>72 Videos</li>
+															<li>
+																<i class="fas fa-forward"></i>102 Lectures
+															</li>
+															<li><i class="fa fa-user"></i>Exp. 4 Year</li>
+														</ul>
+													</div>
+													<p class="card-text">
+														At vero eos et accusamus et iusto odio dignissimos
+														ducimus qui blanditiis praesentium voluptatum
+														deleniti atque corrupti quos dolores et quas
+														molestias excepturi.
+													</p>
+													<ul class="row social-icon">
+														<li>
+															<a href=""><i class="fab fa-facebook-f"></i></a>
+														</li>
+														<li>
+															<a href=""><i class="fab fa-linkedin-in"></i></a>
+														</li>
+														<li>
+															<a href=""><i class="fab fa-twitter"></i></a>
+														</li>
+														<li>
+															<a href=""><i class="fab fa-youtube"></i></a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div
+								class="tab-pane review-tab fade"
+								id="pills-Review"
+								role="tabpanel"
+								aria-labelledby="pills-Review-tab"
+							>
+								<div class="wraper review-stats">
+									<div class="card">
+										<div class="row no-gutters">
+											<div class="col-md-3 rating-overview">
+												<p>4</p>
+												<p>out of 5.0</p>
+												<div class="star-rating">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+											</div>
+											<div class="col-md-8">
+												<div class="card-body">
+													<ul class="row rating-bars">
+														<li class="col-md-6 col-12">
+															<p>5 Star</p>
+															<div class="progress">
+																<div
+																	class="progress-bar"
+																	role="progressbar"
+																	style="width: 85%"
+																	aria-valuenow="25"
+																	aria-valuemin="0"
+																	aria-valuemax="100"
+																></div>
+															</div>
+														</li>
+														<li class="col-md-6 col-12">
+															<p>5 Star</p>
+															<div class="progress">
+																<div
+																	class="progress-bar"
+																	role="progressbar"
+																	style="width: 75%"
+																	aria-valuenow="25"
+																	aria-valuemin="0"
+																	aria-valuemax="100"
+																></div>
+															</div>
+														</li>
+														<li class="col-md-6 col-12">
+															<p>5 Star</p>
+															<div class="progress">
+																<div
+																	class="progress-bar"
+																	role="progressbar"
+																	style="width: 25%"
+																	aria-valuenow="25"
+																	aria-valuemin="0"
+																	aria-valuemax="100"
+																></div>
+															</div>
+														</li>
+														<li class="col-md-6 col-12">
+															<p>5 Star</p>
+															<div class="progress">
+																<div
+																	class="progress-bar"
+																	role="progressbar"
+																	style="width: 50%"
+																	aria-valuenow="25"
+																	aria-valuemin="0"
+																	aria-valuemax="100"
+																></div>
+															</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="wraper review-comment">
+									<h5>Item Reviews - 3</h5>
+									<div class="reviews-comments">
+										<div class="review-item d-flex">
+											<div class="reviewer-img">
+												<div class="box-img">
+													<img
+														src="../assets/img/avater/9mCNr06.jpg"
+														class="img-fluid"
+													/>
+												</div>
+											</div>
+											<div class="review-item-content">
+												<h4>
+													<a href="#">Josaph Manrty</a
+													><span
+														><i class="fa fa-journal-whills"></i> 27 Oct
+														2019</span
+													>
+												</h4>
+												<div class="star-rating">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+												<p>
+													" Commodo est luctus eget. Proin in nunc laoreet justo
+													volutpat blandit enim. Sem felis, ullamcorper vel
+													aliquam non, varius eget justo. Duis quis nunc tellus
+													sollicitudin mauris. "
+												</p>
+												<div class="review-reaction">
+													<a href="" class="comment-like active"
+														><i class="fas fa-thumbs-up"></i>12</a
+													>
+													<a href="" class="comment-dislike active"
+														><i class="fas fa-thumbs-down"></i>1</a
+													>
+													<a href="" class="comment-love active"
+														><i class="fa fa-heart"></i>7</a
+													>
+												</div>
+											</div>
+										</div>
+										<div class="review-item d-flex">
+											<div class="reviewer-img">
+												<div class="box-img">
+													<img
+														src="../assets/img/avater/9mCNr06.jpg"
+														class="img-fluid"
+													/>
+												</div>
+											</div>
+											<div class="review-item-content">
+												<h4>
+													<a href="#">Josaph Manrty</a
+													><span
+														><i class="fa fa-journal-whills"></i> 27 Oct
+														2019</span
+													>
+												</h4>
+												<div class="star-rating">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+												<p>
+													" Commodo est luctus eget. Proin in nunc laoreet justo
+													volutpat blandit enim. Sem felis, ullamcorper vel
+													aliquam non, varius eget justo. Duis quis nunc tellus
+													sollicitudin mauris. "
+												</p>
+												<div class="review-reaction">
+													<a href="" class="comment-like active"
+														><i class="fas fa-thumbs-up"></i>12</a
+													>
+													<a href="" class="comment-dislike active"
+														><i class="fas fa-thumbs-down"></i>1</a
+													>
+													<a href="" class="comment-love active"
+														><i class="fa fa-heart"></i>7</a
+													>
+												</div>
+											</div>
+										</div>
+										<div class="review-item d-flex">
+											<div class="reviewer-img">
+												<div class="box-img">
+													<img
+														src="../assets/img/avater/9mCNr06.jpg"
+														class="img-fluid"
+													/>
+												</div>
+											</div>
+											<div class="review-item-content">
+												<h4>
+													<a href="#">Josaph Manrty</a
+													><span
+														><i class="fa fa-journal-whills"></i> 27 Oct
+														2019</span
+													>
+												</h4>
+												<div class="star-rating">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+												<p>
+													" Commodo est luctus eget. Proin in nunc laoreet justo
+													volutpat blandit enim. Sem felis, ullamcorper vel
+													aliquam non, varius eget justo. Duis quis nunc tellus
+													sollicitudin mauris. "
+												</p>
+												<div class="review-reaction">
+													<a href="" class="comment-like active"
+														><i class="fas fa-thumbs-up"></i>12</a
+													>
+													<a href="" class="comment-dislike active"
+														><i class="fas fa-thumbs-down"></i>1</a
+													>
+													<a href="" class="comment-love active"
+														><i class="fa fa-heart"></i>7</a
+													>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="wraper review-submit">
+									<h5>Submit Reviews</h5>
+									<form>
+										<div class="form-row">
+											<div class="form-group col-md-6 col-12">
+												<label for="inputName1">Name</label>
+												<input
+													type="text"
+													class="form-control"
+													id="inputName"
+													placeholder="Your Name"
+												/>
+											</div>
+											<div class="form-group col-md-5 col-12">
+												<label for="inputEmail1">Email</label>
+												<input
+													type="email"
+													class="form-control"
+													id="inputEmail"
+													placeholder="Your Email"
+												/>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="exampleFormControlInput1">Review</label>
+											<textarea
+												class="form-control"
+												id="exampleFormControlTextarea1"
+												placeholder="Review"
+												rows="3"
+											></textarea>
+										</div>
 
-                                            <li class="unview">
-                                              <i class="fas fa-lock"></i>Startup Startup Web Designing Beginner
-                                              <span class="lecture-timing">20:12</span> 
-                                            </li>
+										<button type="submit" class="btn btn-customize">
+											Submit Review
+										</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-12 all-details-siderbar">
+						<div class="card">
+							<div class="img-box">
+								<img
+									src="../assets/img/work/banner-3.jpg"
+									class="card-img-top"
+									alt="..."
+								/>
+								<div class="play-icon">
+									<i class="fa fa-play"></i>
+								</div>
+							</div>
 
-                                            <li class="unview">
-                                              <i class="fas fa-lock"></i>Startup Startup Web Designing Beginner
-                                              <span class="lecture-timing">20:12</span> 
-                                            </li>
-                                          </ul>
-                                      </div>
+							<div class="card-body">
+								<div class="course-price">
+									<p>Verified Price</p>
+									<h2>$ 149.00</h2>
+								</div>
+								<p class="card-text">
+									Consectetur adipiscing elit, sed do eiusmod tempor incididunt
+									ut labore et dolore.
+								</p>
+								<div class="features">
+									<p>Course Features</p>
+									<ul class="row">
+										<li class="col-6">
+											<i class="fa fa-user"></i>3k Students View
+										</li>
+										<li class="col-6">
+											<i class="fa fa-business-time"> </i>
+											2 hour 30 min
+										</li>
+										<li class="col-6">
+											<i class="fa fa-user"></i>3k Students View
+										</li>
+										<li class="col-6">
+											<i class="fa fa-business-time"> </i>
+											2 hour 30 min
+										</li>
+									</ul>
+								</div>
+								<a href="#" class="btn btn-customize btn-get-member"
+									>Get Membership
+									<i class="fas fa-angle-right"></i>
+								</a>
+								<a href="#" class="btn btn-customize"
+									>Enroll Now
+									<i class="fas fa-angle-right"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!---------------  ------------------------->
+		<!--------- about-course end ------------->
+		<!----------------  ----------------------->
 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane instractor-tab fade " id="pills-Instructor" role="tabpanel" aria-labelledby="pills-Instructor-tab">
-                          <div class="wraper">
-                            <div class="card " >
-                              <div class="row no-gutters">
-                                <div class="col-md-4 col-12 img-box">
-                                  <img src="../assets/img/avater/9mCNr06.jpg" class="img-fluid" alt="...">
-                                </div>
-                                <div class="col-md-8 col-12">
-                                  <div class="card-body">
-                                    <h4 class="card-title"><a href="">Luis Morenno</a></h4>
-                                    <div class="cources-details">
-                                      <ul class="row "> 
-                                        <li><i class="fas fa-calendar"></i>72 Videos</li>
-                                        <li><i class="fas fa-forward"></i>102 Lectures</li>
-                                        <li><i class="fa fa-user"></i>Exp. 4 Year</li>
-                                       </ul>
-                                    </div>
-                                    <p class="card-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.</p>
-                                    <ul class="row social-icon">
-                                      <li>
-                                        <a href=""><i class="fab fa-facebook-f"></i></a>
-                                      </li>
-                                      <li>
-                                        <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                      </li>
-                                      <li>
-                                        <a href=""><i class="fab fa-twitter"></i></a>
-                                      </li>
-                                      <li>
-                                       <a href=""><i class="fab fa-youtube"></i></a> 
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="tab-pane review-tab fade  " id="pills-Review" role="tabpanel" aria-labelledby="pills-Review-tab">
-                          <div class="wraper review-stats">
-                            <div class="card ">
-                              <div class="row no-gutters">
-                                <div class="col-md-3 rating-overview">
-                                  <p>4</p>
-                                  <p>out of 5.0</p>
-                                  <div class="star-rating">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                  <div class="card-body">
-                                      <ul class="row rating-bars">
-                                        <li class="col-md-6 col-12">
-                                          <p>5 Star
-                                          </p>
-                                          <div class="progress">
-                                            <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>   
-                                          </div>
-                                        </li>
-                                        <li class="col-md-6 col-12">
-                                          <p>5 Star
-                                          </p>
-                                          <div class="progress">
-                                            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                          </div>
-                                        </li>
-                                        <li class="col-md-6 col-12">
-                                          <p>5 Star
-                                          </p>
-                                          <div class="progress">
-                                            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                          </div>
-                                        </li>
-                                        <li class="col-md-6 col-12">
-                                          <p>5 Star
-                                          </p>
-                                          <div class="progress">
-                                            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                          </div>
-                                        </li>
-                                      </ul>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="wraper review-comment">
-                            <h5>Item Reviews - 3</h5>
-                            <div class="reviews-comments">
-                              <div class="review-item d-flex">
-                                <div class="reviewer-img">
-                                  <div class="box-img">
-                                    <img src="../assets/img/avater/9mCNr06.jpg" class="img-fluid"></img>
-                                  </div>
-                                </div>
-                                <div class="review-item-content">
-                                  <h4 ><a href="#">Josaph Manrty</a><span><i class="fa fa-journal-whills"></i> 27 Oct 2019</span></h4>
-                                  <div class="star-rating">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                  </div>
-                                  <p>" Commodo est luctus eget. Proin in nunc laoreet justo volutpat blandit enim. Sem felis, ullamcorper vel aliquam non, varius eget justo. Duis quis nunc tellus sollicitudin mauris. "</p>
-                                  <div class="review-reaction">
-                                    <a href="" class="comment-like active"><i class="fas fa-thumbs-up"></i>12</a>
-                                    <a href="" class="comment-dislike active"><i class="fas fa-thumbs-down"></i>1</a>
-                                    <a href="" class="comment-love active"><i class="fa fa-heart"></i>7</a>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="review-item d-flex">
-                                <div class="reviewer-img">
-                                  <div class="box-img">
-                                    <img src="../assets/img/avater/9mCNr06.jpg" class="img-fluid"></img>
-                                  </div>
-                                </div>
-                                <div class="review-item-content">
-                                  <h4 ><a href="#">Josaph Manrty</a><span><i class="fa fa-journal-whills"></i> 27 Oct 2019</span></h4>
-                                  <div class="star-rating">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                  </div>
-                                  <p>" Commodo est luctus eget. Proin in nunc laoreet justo volutpat blandit enim. Sem felis, ullamcorper vel aliquam non, varius eget justo. Duis quis nunc tellus sollicitudin mauris. "</p>
-                                  <div class="review-reaction">
-                                    <a href="" class="comment-like active"><i class="fas fa-thumbs-up"></i>12</a>
-                                    <a href="" class="comment-dislike active"><i class="fas fa-thumbs-down"></i>1</a>
-                                    <a href="" class="comment-love active"><i class="fa fa-heart"></i>7</a>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="review-item d-flex">
-                                <div class="reviewer-img">
-                                  <div class="box-img">
-                                    <img src="../assets/img/avater/9mCNr06.jpg" class="img-fluid"></img>
-                                  </div>
-                                </div>
-                                <div class="review-item-content">
-                                  <h4 ><a href="#">Josaph Manrty</a><span><i class="fa fa-journal-whills"></i> 27 Oct 2019</span></h4>
-                                  <div class="star-rating">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                  </div>
-                                  <p>" Commodo est luctus eget. Proin in nunc laoreet justo volutpat blandit enim. Sem felis, ullamcorper vel aliquam non, varius eget justo. Duis quis nunc tellus sollicitudin mauris. "</p>
-                                  <div class="review-reaction">
-                                    <a href="" class="comment-like active"><i class="fas fa-thumbs-up"></i>12</a>
-                                    <a href="" class="comment-dislike active"><i class="fas fa-thumbs-down"></i>1</a>
-                                    <a href="" class="comment-love active"><i class="fa fa-heart"></i>7</a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="wraper review-submit">
-                            <h5>Submit Reviews</h5>  
-                            <form>
-                              <div class="form-row ">
-                                <div class="form-group col-md-6 col-12">
-                                  <label for="inputName1">Name</label>
-                                  <input type="text" class="form-control" id="inputName" placeholder="Your Name">
-                                </div>
-                                <div class="form-group col-md-5 col-12">
-                                  <label for="inputEmail1">Email</label>
-                                  <input type="email" class="form-control" id="inputEmail"
-                                  placeholder="Your Email">
-                                </div>
-                              </div>
-                              <div class="form-group">
-                                <label for="exampleFormControlInput1">Review</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Review" rows="3"></textarea>
-                              </div>
-                            
-                              <button type="submit" class="btn btn-customize">Submit Review</button>
-                            </form>
-                          </div>
-                        </div>
-                      </div>
-                  </div>
-                  <div class="col-lg-4 col-12 all-details-siderbar">
-                    <div class="card">
-                      <div class="img-box">
-                        <img src="../assets/img/work/banner-3.jpg" class="card-img-top" alt="...">
-                          <div class="play-icon">
-                            <i class="fa fa-play"></i>
-                          </div>
-                      </div>
-                      
+		<!---------------  ------------------------->
+		<!--------- Call to Action start ------------->
+		<!----------------  ----------------------->
+		<section class="call-to-action">
+			<div class="container">
+				<div class="row">
+					<div class="question col-md-6 col-12">
+						<h3>Do You Have Any Queries?</h3>
+						<p>We will assist you in furthering your career and growth.</p>
+					</div>
+					<div class="action col-md-6 col-12">
+						<a class="btn btn-customize" href=""> Talk to us </a>
+					</div>
+				</div>
+			</div>
+		</section>
 
-                      <div class="card-body">
-                        <div class="course-price">
-                          <p>Verified Price</p>
-                          <h2>$ 149.00</h2>
-                        </div>
-                        <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                        <div class="features">
-                          <p>Course Features</p>
-                          <ul class="row">
-                            <li class="col-6">
-                              <i class="fa fa-user"></i>3k Students View
-                            </li>
-                            <li class="col-6">
-                              <i class="fa fa-business-time">
-                              </i>
-                              2 hour 30 min
-                            </li>
-                            <li class="col-6">
-                              <i class="fa fa-user"></i>3k Students View
-                            </li>
-                            <li class="col-6">
-                              <i class="fa fa-business-time">
-                              </i>
-                              2 hour 30 min
-                            </li>
-                          </ul>
-                        </div>
-                        <a href="#" class="btn btn-customize btn-get-member">Get Membership
-                          <i class="fas fa-angle-right"></i>
-                        </a>
-                        <a href="#" class="btn btn-customize">Enroll Now
-                          <i class="fas fa-angle-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-          </div>
-      </section>
-    <!---------------  ------------------------->
-    <!--------- about-course end ------------->
-    <!----------------  ----------------------->
+		<!---------------  ------------------------->
+		<!----------- Call to Action end ------------>
+		<!----------------  ----------------------->
 
-        
-    <!---------------  ------------------------->
-    <!--------- Call to Action start ------------->
-    <!----------------  ----------------------->
-    <section class="call-to-action">
-        <div class="container">
-          <div class="row">
-            <div class="question  col-md-6 col-12">
-              <h3>Do You Have Any Queries?</h3>
-              <p>We will assist you in furthering your career and growth.</p>
-            </div>
-            <div class="action col-md-6 col-12">
-              <a class="btn btn-customize " href="">
-                Talk to us
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-  
-      <!---------------  ------------------------->
-      <!----------- Call to Action end ------------>
-      <!----------------  ----------------------->
-  
-  
-       <!---------------  ------------------------->
-      <!----------- Footer start ------------------>
-      <!----------------  ----------------------->
-  
-      <footer>
-        <div class="d-flex flex-column">
-          <div class="footer-top">
-            <h4>You Can Find Us At</h4>
-            <ul class="row">
-              <li><a><i class="fab fa-facebook-square"></i></a></li>
-              <li><a><i class="fab fa-linkedin "></i></a></li>
-              <li><a><i class="fab fa-twitter-square"></i></a></li>
-              <li><a><i class="fab fa-youtube-square"></i></a></li>
-            </ul>
-          </div>
-          <div class="footer-middle">
-              <div class="container">
-                <div class="row" >
-                   <div class="col-lg-3 col-md-6 col-12 mb-md-5">
-                     <div class="logo">
-                       <img class="img-fluid" src="../assets/img/logo/logo-light.png" alt="" srcset="">
-                     </div>
-                     <div class="why-us-btn d-flex justify-content-between c-white callpse d-md-none mb-3"data-toggle="collapse" data-target="#why-us" aria-expanded="false">
-                        Why us  <i class="fas fa-angle-down "></i>
-                     </div>
-                     <div class="why-us d-md-block collapse" id="why-us">
-                        <h2>Do you require assistance with anything?</h2>
-                        <p>Every month, receive updates, hot deals, tutorials, and discounts delivered directly to your inbox.</p>
-                        <div class="input-group">
-                          <input type="text" class="form-control" placeholder="Your Email" aria-label="Recipient's username" aria-describedby="button-addon2">
-                          <div class="input-group-append">
-                            <button class="btn btn-customize" type="button" id="button-addon2">Submit</button>
-                          </div>
-                        </div>
-                     </div>
-                   </div>
-                   <div class="col-lg-3 col-md-5 col-12 text-lg-center">
-                    <h5 class="title d-md-block d-none">Company</h5>
-                    <div class="more-btn  c-white callpse d-flex justify-content-between d-md-none mb-3"data-toggle="collapse" data-target="#Company" aria-expanded="false">
-                      Company <i class="fas fa-angle-down "></i>
-                   </div>
-                    <ul class="d-flex-column collapse" id="Company">
-                      <li><a href="">iDemy Business</a></li>
-                      <li><a href="">Teach on iDemy</a></li>
-                      <li><a href="">Get the app</a></li>
-                      <li><a href="">About us</a></li>
-                      <li><a href="">Contact us</a></li>
-                    </ul>
-                   </div>
-                   <div class="col-lg-3 col-md-5 col-12 text-lg-center">
-                    <h5 class="title  d-md-block d-none">Customer</h5>
-                    <div class="company-btn  c-white callpse d-flex justify-content-between d-md-none mb-3"data-toggle="collapse" data-target="#Customer" aria-expanded="false">
-                      Customer <i class="fas fa-angle-down"></i>
-                   </div>
-                    <ul class="d-flex-column collapse" id="Customer">
-                      <li><a href="">iDemy Business</a></li>
-                      <li><a href="">Teach on iDemy</a></li>
-                      <li><a href="">Get the app</a></li>
-                      <li><a href="">About us</a></li>
-                      <li><a href="">Contact us</a></li>
-                    </ul>
-                   </div>
-                   <div class="col-lg-3 col-md-5 col-12 text-lg-center">
-                    <h5 class="title d-md-block d-none">More</h5>
-                    <div class="more-btn  c-white callpse d-flex justify-content-between d-md-none mb-3"data-toggle="collapse" data-target="#More" aria-expanded="false">
-                      More <i class="fas fa-angle-down "></i>
-                   </div>
-                    <ul class="d-flex-column collapse" id="More">
-                      <li><a href="">iDemy Business</a></li>
-                      <li><a href="">Teach on iDemy</a></li>
-                      <li><a href="">Get the app</a></li>
-                      <li><a href="">About us</a></li>
-                      <li><a href="">Contact us</a></li>
-                    </ul> 
-                   </div>
-                </div>
-              </div>
-          </div>
-          <div class="footer-end">
-            <p class="mb-0">©2022 iDemy. By LoopCode</p>
-          </div>
-        </div>
-      </footer>
-  
-      <!---------------  ------------------------->
-      <!----------- Footer end ------------------>
-      <!----------------  ----------------------->
-  
-      <!---------------  ------------------------->
-      <!----------- Scroll to top start ---------->
-      <!----------------  ----------------------->
-      <a class="btn-scroll-to-top">
-        <i class="fas fa-chevron-up"></i>
-      </a>
-  
-      <!---------------  ------------------------->
-      <!----------- Scroll to top end  ------------------>
-      <!----------------  ----------------------->
-  
-  
-      <!---------------  ------------------------->
-    <!----------- SignIn Modal start ------------>
-    <!----------------  ----------------------->
-    
-    <div class="modal fade" id="SignIn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Login Your Account
-          </h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-          </button>
-          </div>
-          <div class="modal-body">
-            <div class="sign-form">
-              <form>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                 
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                <div class="form-group row">
-                  <div class="col-4 from-group-item">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck4">
-                  <label class="form-check-label" for="exampleCheck4">Admin</label>
-                  </div>
-                  <div class="col-4 from-group-item">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck5">
-                  <label class="form-check-label" for="exampleCheck5">Student</label>
-                  </div>
-                  <div class="col-4 from-group-item">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck6">
-                  <label class="form-check-label" for="exampleCheck6">Tutors</label>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <button class="btn btn-customize form-submit">Submit</button>
-                </div>
-                <div class="social">
-                  <h5 class="title">Or Login with Social Info</h5>
-                  <ul class="social-icon row">
-                    <li class="social-item col-4">
-                      <a href="">
-                       <i class="fab fa-facebook-f"></i>
-                        Facebook
-                      </a>
-                      
-                    </li>
-                    <li class="social-item col-4">
-                      <a href="">
-                       <i class="fab fa-linkedin-in"></i>
-                        LinkedIn
-                      </a>
-                      
-                    </li>
-                    <li class="social-item col-4">
-                      <a href="">
-                        <i class="fab fa-twitter"></i>
-                        Twitter
-                      </a>   
-                    </li>
-                  </ul>
-                </div>
-              </form>
-            </div>
-          </div>
-          <div class="modal-footer sign-footer ">
-            <div class="signup col-6">
-              <p>Don't have account? <a href="">SignUp</a></p>
-            </div>
-            <div class="forget-password col-5">
-              <a href="" class="text-danger">Forgot Password</a>
-            </div>
-          </div>
-      </div>
-      </div>
-     </div>
+		<!---------------  ------------------------->
+		<!----------- Footer start ------------------>
+		<!----------------  ----------------------->
 
-    <!---------------  ------------------------->
-    <!-----------SignIn Modal end  -------------->
-    <!----------------  ----------------------->
+		<footer>
+			<div class="d-flex flex-column">
+				<div class="footer-top">
+					<h4>You Can Find Us At</h4>
+					<ul class="row">
+						<li>
+							<a><i class="fab fa-facebook-square"></i></a>
+						</li>
+						<li>
+							<a><i class="fab fa-linkedin"></i></a>
+						</li>
+						<li>
+							<a><i class="fab fa-twitter-square"></i></a>
+						</li>
+						<li>
+							<a><i class="fab fa-youtube-square"></i></a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-middle">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-3 col-md-6 col-12 mb-md-5">
+								<div class="logo">
+									<img
+										class="img-fluid"
+										src="../assets/img/logo/logo-light.png"
+										alt=""
+										srcset=""
+									/>
+								</div>
+								<div
+									class="why-us-btn d-flex justify-content-between c-white callpse d-md-none mb-3"
+									data-toggle="collapse"
+									data-target="#why-us"
+									aria-expanded="false"
+								>
+									Why us <i class="fas fa-angle-down"></i>
+								</div>
+								<div class="why-us d-md-block collapse" id="why-us">
+									<h2>Do you require assistance with anything?</h2>
+									<p>
+										Every month, receive updates, hot deals, tutorials, and
+										discounts delivered directly to your inbox.
+									</p>
+									<div class="input-group">
+										<input
+											type="text"
+											class="form-control"
+											placeholder="Your Email"
+											aria-label="Recipient's username"
+											aria-describedby="button-addon2"
+										/>
+										<div class="input-group-append">
+											<button
+												class="btn btn-customize"
+												type="button"
+												id="button-addon2"
+											>
+												Submit
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-5 col-12 text-lg-center">
+								<h5 class="title d-md-block d-none">Company</h5>
+								<div
+									class="more-btn c-white callpse d-flex justify-content-between d-md-none mb-3"
+									data-toggle="collapse"
+									data-target="#Company"
+									aria-expanded="false"
+								>
+									Company <i class="fas fa-angle-down"></i>
+								</div>
+								<ul class="d-flex-column collapse" id="Company">
+									<li><a href="">iDemy Business</a></li>
+									<li><a href="">Teach on iDemy</a></li>
+									<li><a href="">Get the app</a></li>
+									<li><a href="">About us</a></li>
+									<li><a href="">Contact us</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-3 col-md-5 col-12 text-lg-center">
+								<h5 class="title d-md-block d-none">Customer</h5>
+								<div
+									class="company-btn c-white callpse d-flex justify-content-between d-md-none mb-3"
+									data-toggle="collapse"
+									data-target="#Customer"
+									aria-expanded="false"
+								>
+									Customer <i class="fas fa-angle-down"></i>
+								</div>
+								<ul class="d-flex-column collapse" id="Customer">
+									<li><a href="">iDemy Business</a></li>
+									<li><a href="">Teach on iDemy</a></li>
+									<li><a href="">Get the app</a></li>
+									<li><a href="">About us</a></li>
+									<li><a href="">Contact us</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-3 col-md-5 col-12 text-lg-center">
+								<h5 class="title d-md-block d-none">More</h5>
+								<div
+									class="more-btn c-white callpse d-flex justify-content-between d-md-none mb-3"
+									data-toggle="collapse"
+									data-target="#More"
+									aria-expanded="false"
+								>
+									More <i class="fas fa-angle-down"></i>
+								</div>
+								<ul class="d-flex-column collapse" id="More">
+									<li><a href="">iDemy Business</a></li>
+									<li><a href="">Teach on iDemy</a></li>
+									<li><a href="">Get the app</a></li>
+									<li><a href="">About us</a></li>
+									<li><a href="">Contact us</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-end">
+					<p class="mb-0">©2022 iDemy. By LoopCode</p>
+				</div>
+			</div>
+		</footer>
 
-</body>
+		<!---------------  ------------------------->
+		<!----------- Footer end ------------------>
+		<!----------------  ----------------------->
+
+		<!---------------  ------------------------->
+		<!----------- Scroll to top start ---------->
+		<!----------------  ----------------------->
+		<a class="btn-scroll-to-top">
+			<i class="fas fa-chevron-up"></i>
+		</a>
+
+		<!---------------  ------------------------->
+		<!----------- Scroll to top end  ------------------>
+		<!----------------  ----------------------->
+
+		<!---------------  ------------------------->
+		<!----------- SignIn Modal start ------------>
+		<!----------------  ----------------------->
+
+		<div
+			class="modal fade"
+			id="SignIn"
+			tabindex="-1"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">
+							Login Your Account
+						</h5>
+						<button
+							type="button"
+							class="close"
+							data-dismiss="modal"
+							aria-label="Close"
+						>
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="sign-form">
+							<form>
+								<div class="form-group">
+									<label for="exampleInputEmail1">Email address</label>
+									<input
+										type="email"
+										class="form-control"
+										id="exampleInputEmail1"
+										aria-describedby="emailHelp"
+									/>
+								</div>
+								<div class="form-group">
+									<label for="exampleInputPassword1">Password</label>
+									<input
+										type="password"
+										class="form-control"
+										id="exampleInputPassword1"
+									/>
+								</div>
+								<div class="form-group row">
+									<div class="col-4 from-group-item">
+										<input
+											type="checkbox"
+											class="form-check-input"
+											id="exampleCheck4"
+										/>
+										<label class="form-check-label" for="exampleCheck4"
+											>Admin</label
+										>
+									</div>
+									<div class="col-4 from-group-item">
+										<input
+											type="checkbox"
+											class="form-check-input"
+											id="exampleCheck5"
+										/>
+										<label class="form-check-label" for="exampleCheck5"
+											>Student</label
+										>
+									</div>
+									<div class="col-4 from-group-item">
+										<input
+											type="checkbox"
+											class="form-check-input"
+											id="exampleCheck6"
+										/>
+										<label class="form-check-label" for="exampleCheck6"
+											>Tutors</label
+										>
+									</div>
+								</div>
+								<div class="form-group">
+									<button class="btn btn-customize form-submit">Submit</button>
+								</div>
+								<div class="social">
+									<h5 class="title">Or Login with Social Info</h5>
+									<ul class="social-icon row">
+										<li class="social-item col-4">
+											<a href="">
+												<i class="fab fa-facebook-f"></i>
+												Facebook
+											</a>
+										</li>
+										<li class="social-item col-4">
+											<a href="">
+												<i class="fab fa-linkedin-in"></i>
+												LinkedIn
+											</a>
+										</li>
+										<li class="social-item col-4">
+											<a href="">
+												<i class="fab fa-twitter"></i>
+												Twitter
+											</a>
+										</li>
+									</ul>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="modal-footer sign-footer">
+						<div class="signup col-6">
+							<p>Don't have account? <a href="">SignUp</a></p>
+						</div>
+						<div class="forget-password col-5">
+							<a href="" class="text-danger">Forgot Password</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!---------------  ------------------------->
+		<!-----------SignIn Modal end  -------------->
+		<!----------------  ----------------------->
+	</body>
 </html>
