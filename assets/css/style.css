@@ -984,6 +984,9 @@ header .header-info h4 {
 	font-weight: 600;
 	margin-bottom: 0;
 }
+header .header-img-box {
+	backface-visibility: hidden;
+}
 @media (max-width: 1120px) {
 	header {
 		padding: 6.5rem 0 !important;
@@ -1241,6 +1244,7 @@ header .header-info h4 {
 .work .row .work-desc,
 .work-img {
 	margin-bottom: 4rem;
+	backface-visibility: hidden;
 }
 .work-desc-1 {
 	padding-left: 118px;
